@@ -10,12 +10,15 @@ import Foundation
 import Geth
 
 open class EthTypeEncoder {
-
-    class func isDynamic(_ parameter: Any) -> Bool {
+    open static let `default`: EthTypeEncoder = {
+        return EthTypeEncoder()
+    }()
+    
+    public class func isDynamic(_ parameter: Any) -> Bool {
         return parameter is String
     }
     
-    class func encode(_ parameter: Any) throws -> Data {
+    func encode(_ parameter: Any) throws -> Data {
         if let result = parameter as? GethAddress {
             return _encode(result)
         }
@@ -29,7 +32,7 @@ open class EthTypeEncoder {
         throw EthError.typeCanNotBeEncoded
     }
     
-    class func encode(_ parameter: Int) -> Data {
+    func encode(_ parameter: Int) -> Data {
         let uintCount = UInt8(exactly: parameter) ?? 0
         let paramData = Data(bytes: [uintCount])
         let padding = EthType.MAX_BYTE_LENGTH - paramData.count
@@ -41,13 +44,13 @@ open class EthTypeEncoder {
         return target
     }
     
-    private class func _encode(_ parameter: GethAddress) -> Data {
+    private func _encode(_ parameter: GethAddress) -> Data {
         var addressBytes = Data(count: 12)//gmtSendAddress!.getBytes()
         addressBytes.append(parameter.getBytes())
         return addressBytes
     }
     
-    private class func _encode(_ parameter: GethBigInt) -> Data {
+    private func _encode(_ parameter: GethBigInt) -> Data {
         let valAmountData = parameter.getBytes()
         let totalCount = EthType.MAX_BYTE_LENGTH - valAmountData!.count
         var amountBytes = Data(count: totalCount)
@@ -55,12 +58,12 @@ open class EthTypeEncoder {
         return amountBytes
     }
     
-    private class func _encode(_ parameter: String) -> Data {
+    private func _encode(_ parameter: String) -> Data {
         let utf8Data = parameter.data(using: .utf8)!
         return _encodeDynamicBytes(utf8Data)
     }
     
-    private class func _encodeDynamicBytes(_ utf8Data: Data) -> Data {
+    private func _encodeDynamicBytes(_ utf8Data: Data) -> Data {
         let count = utf8Data.count
         // Get Encoded Length
         var encodedLengthData = encode(count)
@@ -69,7 +72,7 @@ open class EthTypeEncoder {
         return encodedLengthData
     }
     
-    private class func encodeBytes(data: Data) -> Data {
+    private func encodeBytes(data: Data) -> Data {
         let length = data.count
         let mod = length % EthType.MAX_BYTE_LENGTH
         

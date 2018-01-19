@@ -11,6 +11,12 @@
 		421F0BC12011798700BE59AA /* EtherS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421F0BB72011798600BE59AA /* EtherS.framework */; };
 		421F0BC62011798700BE59AA /* EtherSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421F0BC52011798700BE59AA /* EtherSTests.swift */; };
 		421F0BC82011798700BE59AA /* EtherS.h in Headers */ = {isa = PBXBuildFile; fileRef = 421F0BBA2011798600BE59AA /* EtherS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		422BFFE72012A9CE00899EF8 /* EthFunctionEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4235D28B20128B1F00095D73 /* EthFunctionEncoder.swift */; };
+		422BFFE82012AAE900899EF8 /* EthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4235D28820128B0300095D73 /* EthError.swift */; };
+		422BFFE92012AAEC00899EF8 /* EthFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4235D28920128B0300095D73 /* EthFunction.swift */; };
+		422BFFEA2012AAEE00899EF8 /* EthType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4235D28720128B0300095D73 /* EthType.swift */; };
+		422BFFEB2012AAF300899EF8 /* EthTypeEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4235D28C20128B1F00095D73 /* EthTypeEncoder.swift */; };
+		422BFFEC2012AC3D00899EF8 /* EthAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4235D28A20128B1F00095D73 /* EthAccount.swift */; };
 		42B0A84B2011811000FE4872 /* EtherS.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 42B0A84A2011811000FE4872 /* EtherS.podspec */; };
 		42B0A8502011865A00FE4872 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 42B0A84F2011865A00FE4872 /* LICENSE */; };
 		42B0A8532011931800FE4872 /* EtherS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B0A8522011931800FE4872 /* EtherS.swift */; };
@@ -365,9 +371,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EtherSTests/Pods-EtherSTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -381,7 +390,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				422BFFEA2012AAEE00899EF8 /* EthType.swift in Sources */,
+				422BFFE72012A9CE00899EF8 /* EthFunctionEncoder.swift in Sources */,
+				422BFFEC2012AC3D00899EF8 /* EthAccount.swift in Sources */,
+				422BFFEB2012AAF300899EF8 /* EthTypeEncoder.swift in Sources */,
 				42B0A8532011931800FE4872 /* EtherS.swift in Sources */,
+				422BFFE82012AAE900899EF8 /* EthError.swift in Sources */,
+				422BFFE92012AAEC00899EF8 /* EthFunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

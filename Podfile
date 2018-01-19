@@ -5,6 +5,7 @@ target 'EtherS' do
 
   # Pods for EtherS
   pod 'Geth', '1.7.3'
+  pod 'CryptoSwift'
 
   target 'EtherSTests' do
     inherit! :search_paths

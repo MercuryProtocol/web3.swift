@@ -11,8 +11,12 @@ import CryptoSwift
 import Geth
 
 open class EthFunctionEncoder {
-
-    class func encode(_ function: EthFunction) -> Data {
+    
+    open static let `default`: EthFunctionEncoder = {
+        return EthFunctionEncoder()
+    }()
+    
+    internal func encode(_ function: EthFunction) -> Data {
         let parameters = function.getInputParameters()
 
         let methodSignature = buildMethodSignature(function.getName(), parameters: parameters)
@@ -22,19 +26,19 @@ open class EthFunctionEncoder {
         return _encodeParameters(parameters, methodData: methodId)
     }
     
-    private class func _encodeParameters(_ parameters: Array<Any>, methodData: Data) -> Data {
+    private func _encodeParameters(_ parameters: Array<Any>, methodData: Data) -> Data {
         var result = methodData
         let dynamicDataOffset: Int = _getLength(parameters) * EthType.MAX_BYTE_LENGTH
         
         for parameter in parameters {
-            let encodedValue = try! EthTypeEncoder.encode(parameter)
+            let encodedValue = try! EthTypeEncoder.default.encode(parameter)
             
             if EthTypeEncoder.isDynamic(parameter) {
-                let encodedDataOffset = EthTypeEncoder.encode(dynamicDataOffset)
+                let encodedDataOffset = EthTypeEncoder.default.encode(dynamicDataOffset)
                 print("Encoded Offset \(encodedDataOffset.bytes)")
                 print("Encoded Offset hex \(encodedDataOffset.bytes.toHexString())")
                 result.append(encodedDataOffset)
-                let encodedParameter = try! EthTypeEncoder.encode(parameter)
+                let encodedParameter = try! EthTypeEncoder.default.encode(parameter)
                 result.append(encodedParameter)
             } else {
                 result.append(encodedValue)
@@ -43,7 +47,7 @@ open class EthFunctionEncoder {
         return result
     }
   
-    class func buildMethodSignature(_ methodName: String, parameters: Array<Any>) -> String {
+    private func buildMethodSignature(_ methodName: String, parameters: Array<Any>) -> String {
         var methodSignature = "\(methodName)("
         
         let params = parameters.map { (parameter) -> String in
@@ -54,7 +58,7 @@ open class EthFunctionEncoder {
         return methodSignature
     }
     
-    private class func _getLength(_ parameters: Array<Any>) -> Int {
+    private func _getLength(_ parameters: Array<Any>) -> Int {
         var count = 0
         for parameter in parameters {
             if parameter is Array<Any> {
@@ -66,7 +70,7 @@ open class EthFunctionEncoder {
         return count
     }
 
-    class func buildMethodId(_ methodSignature: String) -> Data {
+    private func buildMethodId(_ methodSignature: String) -> Data {
         let functionSignatureData = methodSignature.data(using: .utf8)
         let signedFunctionSignature = functionSignatureData!.sha3(SHA3.Variant.keccak256)
         let range = Range(0..<4)
