@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4235D28320128A6000095D73 /* EtherS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4235D28420128A6000095D73 /* EtherS.framework */; };
 		42B0A8B32012852500FE4872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B0A8B22012852500FE4872 /* AppDelegate.swift */; };
 		42B0A8B52012852500FE4872 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B0A8B42012852500FE4872 /* ViewController.swift */; };
 		42B0A8B82012852500FE4872 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B0A8B62012852500FE4872 /* Main.storyboard */; };
@@ -56,7 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4235D28320128A6000095D73 /* EtherS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,11 +86,11 @@
 		42B0A8A62012852500FE4872 = {
 			isa = PBXGroup;
 			children = (
+				4235D28220128A6000095D73 /* Frameworks */,
 				42B0A8B12012852500FE4872 /* iOS Example */,
 				42B0A8C62012852500FE4872 /* iOS ExampleTests */,
 				42B0A8D12012852500FE4872 /* iOS ExampleUITests */,
 				42B0A8B02012852500FE4872 /* Products */,
-				4235D28220128A6000095D73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -440,6 +438,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3K22BUS8RL;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "iOS Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.radicalapp.iOS-Example";
@@ -455,6 +454,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3K22BUS8RL;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "iOS Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.radicalapp.iOS-Example";
