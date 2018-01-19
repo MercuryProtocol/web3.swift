@@ -591,7 +591,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 54D848EED5B35C2BC36CE807 /* Pods-EtherSTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3K22BUS8RL;
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -607,7 +607,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 21D007EFECC74831ADD1BB25 /* Pods-EtherSTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3K22BUS8RL;
 				INFOPLIST_FILE = Tests/Info.plist;
