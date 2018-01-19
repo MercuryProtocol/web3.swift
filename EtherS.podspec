@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://git.cyberdust.com/sameer/EtherS.git", :tag => "#{s.version}" }
 
-  s.source_files = "Source/*.swift"
+  s.source_files = "Source/**/*.{h,swift}"
   # s.public_header_files = 'Sources/*.h'
 
   s.dependency "Geth", "~> 1.7"
