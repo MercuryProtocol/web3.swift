@@ -32,6 +32,12 @@
 		421F0BC02011798700BE59AA /* EtherSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EtherSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		421F0BC52011798700BE59AA /* EtherSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherSTests.swift; sourceTree = "<group>"; };
 		421F0BC72011798700BE59AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4235D28720128B0300095D73 /* EthType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthType.swift; sourceTree = "<group>"; };
+		4235D28820128B0300095D73 /* EthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthError.swift; sourceTree = "<group>"; };
+		4235D28920128B0300095D73 /* EthFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthFunction.swift; sourceTree = "<group>"; };
+		4235D28A20128B1F00095D73 /* EthAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthAccount.swift; sourceTree = "<group>"; };
+		4235D28B20128B1F00095D73 /* EthFunctionEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthFunctionEncoder.swift; sourceTree = "<group>"; };
+		4235D28C20128B1F00095D73 /* EthTypeEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthTypeEncoder.swift; sourceTree = "<group>"; };
 		42B0A84A2011811000FE4872 /* EtherS.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EtherS.podspec; sourceTree = SOURCE_ROOT; };
 		42B0A84F2011865A00FE4872 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		42B0A8522011931800FE4872 /* EtherS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherS.swift; sourceTree = "<group>"; };
@@ -79,6 +85,7 @@
 		421F0BB92011798600BE59AA /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				4235D28520128AE200095D73 /* Abi */,
 				42B0A8522011931800FE4872 /* EtherS.swift */,
 				42B0A8542012839300FE4872 /* Supporting Files */,
 			);
@@ -101,6 +108,27 @@
 				42B0A84F2011865A00FE4872 /* LICENSE */,
 			);
 			name = Deployment;
+			sourceTree = "<group>";
+		};
+		4235D28520128AE200095D73 /* Abi */ = {
+			isa = PBXGroup;
+			children = (
+				4235D28620128AED00095D73 /* DataTypes */,
+				4235D28A20128B1F00095D73 /* EthAccount.swift */,
+				4235D28B20128B1F00095D73 /* EthFunctionEncoder.swift */,
+				4235D28C20128B1F00095D73 /* EthTypeEncoder.swift */,
+			);
+			path = Abi;
+			sourceTree = "<group>";
+		};
+		4235D28620128AED00095D73 /* DataTypes */ = {
+			isa = PBXGroup;
+			children = (
+				4235D28820128B0300095D73 /* EthError.swift */,
+				4235D28920128B0300095D73 /* EthFunction.swift */,
+				4235D28720128B0300095D73 /* EthType.swift */,
+			);
+			path = DataTypes;
 			sourceTree = "<group>";
 		};
 		42B0A851201186AD00FE4872 /* Documentation */ = {

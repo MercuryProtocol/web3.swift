@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4235D28320128A6000095D73 /* EtherS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4235D28420128A6000095D73 /* EtherS.framework */; };
 		42B0A8B32012852500FE4872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B0A8B22012852500FE4872 /* AppDelegate.swift */; };
 		42B0A8B52012852500FE4872 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B0A8B42012852500FE4872 /* ViewController.swift */; };
 		42B0A8B82012852500FE4872 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B0A8B62012852500FE4872 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4235D28420128A6000095D73 /* EtherS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EtherS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B0A8AF2012852500FE4872 /* iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B0A8B22012852500FE4872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42B0A8B42012852500FE4872 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4235D28320128A6000095D73 /* EtherS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4235D28220128A6000095D73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4235D28420128A6000095D73 /* EtherS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		42B0A8A62012852500FE4872 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +92,7 @@
 				42B0A8C62012852500FE4872 /* iOS ExampleTests */,
 				42B0A8D12012852500FE4872 /* iOS ExampleUITests */,
 				42B0A8B02012852500FE4872 /* Products */,
+				4235D28220128A6000095D73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
