@@ -53,8 +53,10 @@
 		421F0BAD2011798600BE59AA = {
 			isa = PBXGroup;
 			children = (
-				421F0BB92011798600BE59AA /* EtherS */,
-				421F0BC42011798700BE59AA /* EtherSTests */,
+				421F0BD320117B9F00BE59AA /* Assets */,
+				421F0BD220117B4200BE59AA /* Deployment */,
+				421F0BB92011798600BE59AA /* Source */,
+				421F0BC42011798700BE59AA /* Tests */,
 				421F0BB82011798600BE59AA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,22 +70,36 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		421F0BB92011798600BE59AA /* EtherS */ = {
+		421F0BB92011798600BE59AA /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				421F0BBA2011798600BE59AA /* EtherS.h */,
-				421F0BBB2011798700BE59AA /* Info.plist */,
 			);
-			path = EtherS;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		421F0BC42011798700BE59AA /* EtherSTests */ = {
+		421F0BC42011798700BE59AA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				421F0BC52011798700BE59AA /* EtherSTests.swift */,
 				421F0BC72011798700BE59AA /* Info.plist */,
 			);
-			path = EtherSTests;
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		421F0BD220117B4200BE59AA /* Deployment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Deployment;
+			sourceTree = "<group>";
+		};
+		421F0BD320117B9F00BE59AA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				421F0BBB2011798700BE59AA /* Info.plist */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,7 +357,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = EtherS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Assets/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.radicalapp.EtherS;
@@ -362,7 +378,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = EtherS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Assets/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.radicalapp.EtherS;
