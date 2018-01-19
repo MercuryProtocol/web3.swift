@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.authors            = { "Sameer Khavanekar" => "sameer@cyberdust.com", "Rohit Kotian" => "rohit@mercuryprotocol.com" }
   s.social_media_url   = "https://twitter.com/mercuryprotocol"
 
-  s.platform     = :ios, "11.0"
+  s.platform     = :ios, "9.0"
   s.source       = { :git => "https://git.cyberdust.com/sameer/EtherS.git", :tag => "#{s.version}" }
 
   s.source_files = "Source/*.swift"
