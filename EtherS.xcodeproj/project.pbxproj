@@ -12,6 +12,7 @@
 		421F0BC82011798700BE59AA /* EtherS.h in Headers */ = {isa = PBXBuildFile; fileRef = 421F0BBA2011798600BE59AA /* EtherS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42B0A84B2011811000FE4872 /* EtherS.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 42B0A84A2011811000FE4872 /* EtherS.podspec */; };
 		42B0A8502011865A00FE4872 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 42B0A84F2011865A00FE4872 /* LICENSE */; };
+		42B0A8532011931800FE4872 /* EtherS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B0A8522011931800FE4872 /* EtherS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		421F0BC72011798700BE59AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42B0A84A2011811000FE4872 /* EtherS.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EtherS.podspec; sourceTree = SOURCE_ROOT; };
 		42B0A84F2011865A00FE4872 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		42B0A8522011931800FE4872 /* EtherS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		421F0BB92011798600BE59AA /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				42B0A8522011931800FE4872 /* EtherS.swift */,
 				42B0A84E201184DA00FE4872 /* Supporting Files */,
 			);
 			path = Source;
@@ -178,6 +181,7 @@
 				TargetAttributes = {
 					421F0BB62011798600BE59AA = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					421F0BBF2011798700BE59AA = {
@@ -228,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42B0A8532011931800FE4872 /* EtherS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +373,7 @@
 		421F0BCC2011798700BE59AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -381,6 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.radicalapp.EtherS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -389,6 +396,7 @@
 		421F0BCD2011798700BE59AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -410,6 +418,7 @@
 		421F0BCF2011798700BE59AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3K22BUS8RL;
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -424,6 +433,7 @@
 		421F0BD02011798700BE59AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3K22BUS8RL;
 				INFOPLIST_FILE = Tests/Info.plist;
