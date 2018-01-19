@@ -20,5 +20,6 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Sources/*.h'
 
   s.dependency "Geth", "~> 1.7"
+  s.dependency "CryptoSwift"
 
 end
