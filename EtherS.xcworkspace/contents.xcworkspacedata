@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:EtherS.xcodeproj">
+      location = "group:EtherS.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Example/iOS Example/iOS Example.xcodeproj">
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
