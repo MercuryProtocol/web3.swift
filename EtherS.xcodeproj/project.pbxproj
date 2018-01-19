@@ -80,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				42B0A8522011931800FE4872 /* EtherS.swift */,
-				42B0A84E201184DA00FE4872 /* Supporting Files */,
+				42B0A8542012839300FE4872 /* Supporting Files */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -103,20 +103,20 @@
 			name = Deployment;
 			sourceTree = "<group>";
 		};
-		42B0A84E201184DA00FE4872 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				421F0BBB2011798700BE59AA /* Info.plist */,
-				421F0BBA2011798600BE59AA /* EtherS.h */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		42B0A851201186AD00FE4872 /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Documentation;
+			sourceTree = "<group>";
+		};
+		42B0A8542012839300FE4872 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				421F0BBA2011798600BE59AA /* EtherS.h */,
+				421F0BBB2011798700BE59AA /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,7 +381,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -405,7 +405,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
