@@ -13,7 +13,7 @@ open class EthFunction {
     private var _inputParameters: Array<Any>!
     private var _outputParameters: Array<Any>?
     
-    init(name: String, inputParameters: Array<Any>, outputParameters: Array<Any>? = nil) {
+    public init(name: String, inputParameters: Array<Any>, outputParameters: Array<Any>? = nil) {
         _name = name
         _inputParameters = inputParameters
         _outputParameters = outputParameters

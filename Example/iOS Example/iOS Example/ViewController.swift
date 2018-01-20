@@ -15,7 +15,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        EtherS.sign()
+        let function = EthFunction(name: "Test", inputParameters: [5])
+        let encodedData = EtherS.encode(function)
+        //print(encodedData.toHexString())
     }
 
     override func didReceiveMemoryWarning() {
