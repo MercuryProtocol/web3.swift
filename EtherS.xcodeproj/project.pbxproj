@@ -17,6 +17,7 @@
 		422BFFEB2012AAF300899EF8 /* EthTypeEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4235D28C20128B1F00095D73 /* EthTypeEncoder.swift */; };
 		422BFFEC2012AC3D00899EF8 /* EthAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4235D28A20128B1F00095D73 /* EthAccount.swift */; };
 		42A82AD22016841D007290BD /* Geth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A82AD12016841D007290BD /* Geth.framework */; };
+		42A82AD320168862007290BD /* Geth.framework in Resources */ = {isa = PBXBuildFile; fileRef = 42A82AD12016841D007290BD /* Geth.framework */; };
 		42B0A84B2011811000FE4872 /* EtherS.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 42B0A84A2011811000FE4872 /* EtherS.podspec */; };
 		42B0A8502011865A00FE4872 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 42B0A84F2011865A00FE4872 /* LICENSE */; };
 		42B0A8532011931800FE4872 /* EtherS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B0A8522011931800FE4872 /* EtherS.swift */; };
@@ -259,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A82AD320168862007290BD /* Geth.framework in Resources */,
 				42B0A8502011865A00FE4872 /* LICENSE in Resources */,
 				42B0A84B2011811000FE4872 /* EtherS.podspec in Resources */,
 			);
