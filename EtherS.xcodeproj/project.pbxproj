@@ -432,10 +432,6 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
-					"-framework",
-					"\"CryptoSwift\"",
-					"-framework",
-					"\"Geth\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.radicalapp.EtherS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -466,10 +462,6 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
-					"-framework",
-					"\"CryptoSwift\"",
-					"-framework",
-					"\"Geth\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.radicalapp.EtherS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
