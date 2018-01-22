@@ -9,7 +9,6 @@ Pod::Spec.new do |s|
   s.homepage     = "http://www.mercuryprotocol.com/EtherS"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
   s.license      = { :type => "MIT", :file => "LICENSE" }
-  s.author             = { "Sameer Khavanekar" => "sameer@mercuryprotocol.com" }
   s.authors            = { "Sameer Khavanekar" => "sameer@cyberdust.com", "Rohit Kotian" => "rohit@mercuryprotocol.com" }
   s.social_media_url   = "https://twitter.com/mercuryprotocol"
 
