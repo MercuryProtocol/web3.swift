@@ -16,6 +16,7 @@
 		422BFFEA2012AAEE00899EF8 /* EthType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4235D28720128B0300095D73 /* EthType.swift */; };
 		422BFFEB2012AAF300899EF8 /* EthTypeEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4235D28C20128B1F00095D73 /* EthTypeEncoder.swift */; };
 		422BFFEC2012AC3D00899EF8 /* EthAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4235D28A20128B1F00095D73 /* EthAccount.swift */; };
+		42A82AD22016841D007290BD /* Geth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A82AD12016841D007290BD /* Geth.framework */; };
 		42B0A84B2011811000FE4872 /* EtherS.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 42B0A84A2011811000FE4872 /* EtherS.podspec */; };
 		42B0A8502011865A00FE4872 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 42B0A84F2011865A00FE4872 /* LICENSE */; };
 		42B0A8532011931800FE4872 /* EtherS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B0A8522011931800FE4872 /* EtherS.swift */; };
@@ -44,6 +45,7 @@
 		4235D28A20128B1F00095D73 /* EthAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthAccount.swift; sourceTree = "<group>"; };
 		4235D28B20128B1F00095D73 /* EthFunctionEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthFunctionEncoder.swift; sourceTree = "<group>"; };
 		4235D28C20128B1F00095D73 /* EthTypeEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthTypeEncoder.swift; sourceTree = "<group>"; };
+		42A82AD12016841D007290BD /* Geth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Geth.framework; sourceTree = "<group>"; };
 		42B0A84A2011811000FE4872 /* EtherS.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EtherS.podspec; sourceTree = SOURCE_ROOT; };
 		42B0A84F2011865A00FE4872 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		42B0A8522011931800FE4872 /* EtherS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherS.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A82AD22016841D007290BD /* Geth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +79,7 @@
 				421F0BB82011798600BE59AA /* Products */,
 				421F0BB92011798600BE59AA /* Source */,
 				421F0BC42011798700BE59AA /* Tests */,
+				42A82AD02016841C007290BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +139,14 @@
 				4235D28720128B0300095D73 /* EthType.swift */,
 			);
 			path = DataTypes;
+			sourceTree = "<group>";
+		};
+		42A82AD02016841C007290BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42A82AD12016841D007290BD /* Geth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		42B0A851201186AD00FE4872 /* Documentation */ = {
@@ -425,6 +437,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -455,6 +471,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
