@@ -19,8 +19,12 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Sources/*.h'
   s.requires_arc = true
 
-  s.frameworks = "Geth"
+  s.static_framework = true
   #s.dependency "Geth", "~> 1.7"
   s.dependency "CryptoSwift"
+  s.dependency 'Geth'
+  s.pod_target_xcconfig = {
+     "ENABLE_BITCODE" => 'NO'
+}
 
 end
