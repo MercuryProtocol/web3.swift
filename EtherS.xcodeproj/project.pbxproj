@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0ACCD7CA8C15B974D96A01D1 /* Pods_EtherS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5F732B5CFCE004B2744ECBB /* Pods_EtherS.framework */; };
 		421F0BC12011798700BE59AA /* EtherS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421F0BB72011798600BE59AA /* EtherS.framework */; };
 		421F0BC62011798700BE59AA /* EtherSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421F0BC52011798700BE59AA /* EtherSTests.swift */; };
 		421F0BC82011798700BE59AA /* EtherS.h in Headers */ = {isa = PBXBuildFile; fileRef = 421F0BBA2011798600BE59AA /* EtherS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -20,7 +19,6 @@
 		42B0A84B2011811000FE4872 /* EtherS.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 42B0A84A2011811000FE4872 /* EtherS.podspec */; };
 		42B0A8502011865A00FE4872 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 42B0A84F2011865A00FE4872 /* LICENSE */; };
 		42B0A8532011931800FE4872 /* EtherS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B0A8522011931800FE4872 /* EtherS.swift */; };
-		C09006D9BB1C28F92787596F /* Pods_EtherSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246EE1EC7B4DCA5B2B1FF65C /* Pods_EtherSTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +32,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		21D007EFECC74831ADD1BB25 /* Pods-EtherSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtherSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EtherSTests/Pods-EtherSTests.release.xcconfig"; sourceTree = "<group>"; };
-		246EE1EC7B4DCA5B2B1FF65C /* Pods_EtherSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EtherSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DE02CA275A847155FE3A6A3 /* Pods-EtherS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtherS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EtherS/Pods-EtherS.debug.xcconfig"; sourceTree = "<group>"; };
 		421F0BB72011798600BE59AA /* EtherS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EtherS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		421F0BBA2011798600BE59AA /* EtherS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EtherS.h; sourceTree = "<group>"; };
 		421F0BBB2011798700BE59AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,9 +47,6 @@
 		42B0A84A2011811000FE4872 /* EtherS.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EtherS.podspec; sourceTree = SOURCE_ROOT; };
 		42B0A84F2011865A00FE4872 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		42B0A8522011931800FE4872 /* EtherS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherS.swift; sourceTree = "<group>"; };
-		54D848EED5B35C2BC36CE807 /* Pods-EtherSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtherSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EtherSTests/Pods-EtherSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		880D8A366A8E76ECCD167AE4 /* Pods-EtherS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtherS.release.xcconfig"; path = "Pods/Target Support Files/Pods-EtherS/Pods-EtherS.release.xcconfig"; sourceTree = "<group>"; };
-		A5F732B5CFCE004B2744ECBB /* Pods_EtherS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EtherS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +54,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ACCD7CA8C15B974D96A01D1 /* Pods_EtherS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +62,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				421F0BC12011798700BE59AA /* EtherS.framework in Frameworks */,
-				C09006D9BB1C28F92787596F /* Pods_EtherSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,8 +76,6 @@
 				421F0BB82011798600BE59AA /* Products */,
 				421F0BB92011798600BE59AA /* Source */,
 				421F0BC42011798700BE59AA /* Tests */,
-				8A8AAC45C8775A5BF6F4DCF2 /* Pods */,
-				ED76E296452A1A9467ECFE50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,26 +153,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8A8AAC45C8775A5BF6F4DCF2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2DE02CA275A847155FE3A6A3 /* Pods-EtherS.debug.xcconfig */,
-				880D8A366A8E76ECCD167AE4 /* Pods-EtherS.release.xcconfig */,
-				54D848EED5B35C2BC36CE807 /* Pods-EtherSTests.debug.xcconfig */,
-				21D007EFECC74831ADD1BB25 /* Pods-EtherSTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		ED76E296452A1A9467ECFE50 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A5F732B5CFCE004B2744ECBB /* Pods_EtherS.framework */,
-				246EE1EC7B4DCA5B2B1FF65C /* Pods_EtherSTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -203,12 +171,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 421F0BCB2011798700BE59AA /* Build configuration list for PBXNativeTarget "EtherS" */;
 			buildPhases = (
-				2CF071430575C89061EE0E3E /* [CP] Check Pods Manifest.lock */,
 				421F0BB22011798600BE59AA /* Sources */,
 				421F0BB32011798600BE59AA /* Frameworks */,
 				421F0BB42011798600BE59AA /* Headers */,
 				421F0BB52011798600BE59AA /* Resources */,
-				9066737ECF9289A20F91CB49 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,12 +189,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 421F0BCE2011798700BE59AA /* Build configuration list for PBXNativeTarget "EtherSTests" */;
 			buildPhases = (
-				B0D12B316D255F5EE1648695 /* [CP] Check Pods Manifest.lock */,
 				421F0BBC2011798700BE59AA /* Sources */,
 				421F0BBD2011798700BE59AA /* Frameworks */,
 				421F0BBE2011798700BE59AA /* Resources */,
-				C2E700C4FF705FAFD01B3DC8 /* [CP] Embed Pods Frameworks */,
-				4AB438CBC9D0BFD32FD43892 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,93 +260,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2CF071430575C89061EE0E3E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EtherS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4AB438CBC9D0BFD32FD43892 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtherSTests/Pods-EtherSTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9066737ECF9289A20F91CB49 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtherS/Pods-EtherS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B0D12B316D255F5EE1648695 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EtherSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C2E700C4FF705FAFD01B3DC8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EtherSTests/Pods-EtherSTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtherSTests/Pods-EtherSTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		421F0BB22011798600BE59AA /* Sources */ = {
@@ -538,7 +414,6 @@
 		};
 		421F0BCC2011798700BE59AA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DE02CA275A847155FE3A6A3 /* Pods-EtherS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
@@ -573,7 +448,6 @@
 		};
 		421F0BCD2011798700BE59AA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 880D8A366A8E76ECCD167AE4 /* Pods-EtherS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
@@ -607,7 +481,6 @@
 		};
 		421F0BCF2011798700BE59AA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54D848EED5B35C2BC36CE807 /* Pods-EtherSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
@@ -623,7 +496,6 @@
 		};
 		421F0BD02011798700BE59AA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21D007EFECC74831ADD1BB25 /* Pods-EtherSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
