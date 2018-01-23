@@ -21,8 +21,8 @@ target 'EtherS' do
 
 end
 
-target 'iOS Example' do
-  project 'Example/iOS Example'
+#target 'iOS Example' do
+#  project 'Example/iOS Example'
 
-  testing_pods
-end
+#  testing_pods
+#end
