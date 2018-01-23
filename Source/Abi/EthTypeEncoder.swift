@@ -19,6 +19,9 @@ open class EthTypeEncoder {
     }
     
     func encode(_ parameter: Any) throws -> Data {
+        
+        print("Encoding to Big Int \(parameter as? GethBigInt)")
+        
         if let result = parameter as? GethAddress {
             return _encode(result)
         }
