@@ -50,6 +50,7 @@
 		4235D28A20128B1F00095D73 /* EthAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthAccount.swift; sourceTree = "<group>"; };
 		4235D28B20128B1F00095D73 /* EthFunctionEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthFunctionEncoder.swift; sourceTree = "<group>"; };
 		4235D28C20128B1F00095D73 /* EthTypeEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthTypeEncoder.swift; sourceTree = "<group>"; };
+		427BDE372017F2400054F870 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		42A82AD12016841D007290BD /* Geth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Geth.framework; sourceTree = "<group>"; };
 		42B0A84A2011811000FE4872 /* EtherS.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EtherS.podspec; sourceTree = SOURCE_ROOT; };
 		42B0A84F2011865A00FE4872 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -117,6 +118,7 @@
 			children = (
 				4235D28520128AE200095D73 /* Abi */,
 				42B0A8522011931800FE4872 /* EtherS.swift */,
+				427BDE362017F18A0054F870 /* Extension */,
 				42B0A8542012839300FE4872 /* Supporting Files */,
 			);
 			path = Source;
@@ -159,6 +161,14 @@
 				4235D28720128B0300095D73 /* EthType.swift */,
 			);
 			path = DataTypes;
+			sourceTree = "<group>";
+		};
+		427BDE362017F18A0054F870 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				427BDE372017F2400054F870 /* String+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		42A82AD02016841C007290BD /* Frameworks */ = {
