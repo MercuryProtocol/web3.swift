@@ -10,16 +10,16 @@ import Foundation
 import Geth
 
 open class EthAccountConfiguration {
-    public var username: String
-    public var password: String
+    public var namespace: String?
+    public var password: String?
     
-    public init(username: String, password: String) {
-        self.username = username
+    public init(namespace: String?, password: String?, shouldCreateAccount: Bool) {
+        self.namespace = namespace
         self.password = password
     }
     
     open static let `default`: EthAccountConfiguration = {
-        return EthAccountConfiguration(username: "test", password: "qwerty")
+        return EthAccountConfiguration(namespace: "wallet", password: "qwerty", shouldCreateAccount: true)
     }()
     
 }
@@ -30,45 +30,67 @@ open class EthAccountCoordinator {
     fileprivate var _account: GethAccount? = nil
     fileprivate var _gethContext: GethContext? = nil
     
-    fileprivate var _configuaration: EthAccountConfiguration
+    open var defaultConfiguration: EthAccountConfiguration = EthAccountConfiguration.default
     
     open static let `default`: EthAccountCoordinator = {
-        return EthAccountCoordinator(EthAccountConfiguration.default)
+        return EthAccountCoordinator()
     }()
     
     open var account: GethAccount? {
         return _account
     }
     
-    public init(_ configuration: EthAccountConfiguration) {
-        _configuaration = configuration
-        _ = createAccount(configuration.password, at: configuration.username)
-    }
-    
-    open func createAccount(_ password: String, at: String) -> GethAccount? {
-        if _keystore == nil {
-            _createKeystore(at)
+    open func setup(_ configuration: EthAccountConfiguration) -> (GethKeyStore?, GethAccount?) {
+        defaultConfiguration = configuration
+        _keystore = _createKeystore(configuration.namespace)
+        
+        guard let keystore = _keystore else {
+            print("Failed to create keystore")
+            return (nil, nil)
         }
-        return _createAccount(password)
+        if let password = configuration.password {
+            _account = _createAccount(keystore, password: password)
+            return (_keystore, _account)
+        } else {
+            print("Account not created as password is not set")
+        }
+        return (_keystore, nil)
+    }
+    
+    open func createAccount(_ password: String) -> GethAccount? {
+        if _keystore == nil {
+            _keystore = _createKeystore(defaultConfiguration.namespace)
+        }
+        guard let keystore = _keystore else {
+            print("Failed to create keystore")
+            return nil
+        }
+        _account = _createAccount(keystore, password: password)
+        return _account
     }
     
     
-    private func _createKeystore(_ at: String) {
+    private func _createKeystore(_ atPath: String?) -> GethKeyStore? {
         let datadir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
-        let finalPath = datadir + "/" + "\(at)" + "/keystore"
-        _keystore = GethNewKeyStore(finalPath, GethLightScryptN, GethLightScryptP)  // GethStandardScryptN, GethStandardScryptP, GethLightScryptN, GethLightScryptP or number
+        var pathInfix = atPath ?? ""
+        if !pathInfix.isEmpty {
+            pathInfix = pathInfix + "/"
+        }
+        let finalPath = datadir + "/" + "\(pathInfix)" + "keystore"
+        let keystore = GethNewKeyStore(finalPath, GethLightScryptN, GethLightScryptP)  // GethStandardScryptN, GethStandardScryptP, GethLightScryptN, GethLightScryptP or number
         _gethContext = GethNewContext()
+        return keystore
     }
     
     
-    fileprivate func _createAccount(_ password: String) -> GethAccount? {
+    fileprivate func _createAccount(_ keystore: GethKeyStore, password: String) -> GethAccount? {
         do {
             if let account = _getAccount(password) {
-                _account = account
+                return account
             } else {
-                _account = try _keystore?.newAccount(password)
+                let account = try keystore.newAccount(password)
+                return account
             }
-            return _account
         } catch {
             print("Failed to create account!")
             return nil
@@ -80,11 +102,11 @@ open class EthAccountCoordinator {
     private func _getAccount(_ password: String, at: Int = 0) -> GethAccount? {
         if let accounts = _keystore?.getAccounts() {
             do {
-                _account = try accounts.get(at)
-                if _account != nil {
-                    try _keystore?.unlock(_account!, passphrase: password)
+                let account: GethAccount? = try accounts.get(at)
+                if let account = account {
+                    try _keystore?.unlock(account, passphrase: password)
                 }
-                return _account
+                return account
             } catch {
                 return nil
             }
@@ -99,7 +121,11 @@ open class EthAccountCoordinator {
 public extension EthAccountCoordinator {
     
     public func sign(address: GethAddress, encodedFunctionData: Data, nonce: Int64, gasLimit: GethBigInt, gasPrice: GethBigInt) -> GethTransaction? {
-        return sign(address: address, encodedFunctionData: encodedFunctionData, nonce: nonce, gasLimit: gasLimit, gasPrice: gasPrice, password: _configuaration.password)
+        guard let password = defaultConfiguration.password else {
+            print("Password not set")
+            return nil
+        }
+        return sign(address: address, encodedFunctionData: encodedFunctionData, nonce: nonce, gasLimit: gasLimit, gasPrice: gasPrice, password: password)
     }
     
     public func sign(address: GethAddress, encodedFunctionData: Data, nonce: Int64, gasLimit: GethBigInt, gasPrice: GethBigInt, password: String) -> GethTransaction? {
