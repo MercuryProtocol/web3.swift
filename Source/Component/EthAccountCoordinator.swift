@@ -58,6 +58,7 @@ open class EthAccountCoordinator {
     }
     
     open func createAccount(_ password: String) -> GethAccount? {
+        defaultConfiguration.password = password
         if _keystore == nil {
             _keystore = _createKeystore(defaultConfiguration.namespace)
         }
