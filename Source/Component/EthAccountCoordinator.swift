@@ -36,6 +36,9 @@ open class EthAccountCoordinator {
         return EthAccountCoordinator(EthAccountConfiguration.default)
     }()
     
+    public var account: GethAccount? {
+        return _account
+    }
     
     public init(_ configuration: EthAccountConfiguration) {
         _configuaration = configuration
