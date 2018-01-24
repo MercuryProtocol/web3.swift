@@ -14,11 +14,11 @@ open class EthTypeEncoder {
         return EthTypeEncoder()
     }()
     
-    public class func isDynamic(_ parameter: Any) -> Bool {
+    open class func isDynamic(_ parameter: Any) -> Bool {
         return parameter is String
     }
     
-    func encode(_ parameter: Any) throws -> Data {
+    open func encode(_ parameter: Any) throws -> Data {
         if let result = parameter as? GethAddress {
             return _encode(result)
         }
@@ -32,7 +32,7 @@ open class EthTypeEncoder {
         throw EthError.typeCanNotBeEncoded
     }
     
-    func encode(_ parameter: Int) -> Data {
+    open func encode(_ parameter: Int) -> Data {
         let uintCount = UInt8(exactly: parameter) ?? 0
         let paramData = Data(bytes: [uintCount])
         let padding = EthType.MAX_BYTE_LENGTH - paramData.count

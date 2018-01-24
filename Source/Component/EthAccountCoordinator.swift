@@ -99,6 +99,10 @@ open class EthAccountCoordinator {
 public extension EthAccountCoordinator {
     
     public func sign(address: GethAddress, encodedFunctionData: Data, nonce: Int64, gasLimit: GethBigInt, gasPrice: GethBigInt) -> GethTransaction? {
+        return sign(address: address, encodedFunctionData: encodedFunctionData, nonce: nonce, gasLimit: gasLimit, gasPrice: gasPrice, password: _configuaration.password)
+    }
+    
+    public func sign(address: GethAddress, encodedFunctionData: Data, nonce: Int64, gasLimit: GethBigInt, gasPrice: GethBigInt, password: String) -> GethTransaction? {
         guard let keystore = _keystore, let account = _account else {
             // TODO:- We can return Error here/Throw one
             print("Create keystore/account first")
@@ -108,7 +112,7 @@ public extension EthAccountCoordinator {
         do {
             let amount = GethNewBigInt(0)
             if let newTransaction = GethNewTransaction(nonce, address, amount, gasLimit, gasPrice, encodedFunctionData) {
-                try keystore.unlock(account, passphrase: _configuaration.password)
+                try keystore.unlock(account, passphrase: password)
                 let finalTransaction = try keystore.signTx(account, tx: newTransaction, chainID: nil)
                 return finalTransaction
             } else {

@@ -16,7 +16,7 @@ open class EthFunctionEncoder {
         return EthFunctionEncoder()
     }()
     
-    internal func encode(_ function: EthFunction) -> Data {
+    open func encode(_ function: EthFunction) -> Data {
         let parameters = function.getInputParameters()
 
         let methodSignature = buildMethodSignature(function.getName(), parameters: parameters)
