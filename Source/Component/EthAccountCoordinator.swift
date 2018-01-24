@@ -98,7 +98,7 @@ open class EthAccountCoordinator {
 
 public extension EthAccountCoordinator {
     
-    open func sign(address: GethAddress, encodedFunctionData: Data, nonce: Int64, gasLimit: GethBigInt, gasPrice: GethBigInt) -> GethTransaction? {
+    public func sign(address: GethAddress, encodedFunctionData: Data, nonce: Int64, gasLimit: GethBigInt, gasPrice: GethBigInt) -> GethTransaction? {
         guard let keystore = _keystore, let account = _account else {
             // TODO:- We can return Error here/Throw one
             print("Create keystore/account first")
