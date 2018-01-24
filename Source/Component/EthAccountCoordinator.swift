@@ -96,7 +96,7 @@ open class EthAccountCoordinator {
 }
 
 
-extension EthAccountCoordinator {
+open extension EthAccountCoordinator {
     
     open func sign(address: GethAddress, encodedFunctionData: Data, nonce: Int64, gasLimit: GethBigInt, gasPrice: GethBigInt) -> GethTransaction? {
         guard let keystore = _keystore, let account = _account else {
