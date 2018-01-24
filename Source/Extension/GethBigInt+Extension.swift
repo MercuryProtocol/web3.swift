@@ -23,4 +23,10 @@ public extension GethBigInt {
         return result
     }
     
+    public var decimalString: String {
+        return self.getString(10)
+    }
+    
+    
+    
 }

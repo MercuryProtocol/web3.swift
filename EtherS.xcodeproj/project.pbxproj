@@ -97,11 +97,11 @@
 			children = (
 				421F0BD220117B4200BE59AA /* Deployment */,
 				42B0A851201186AD00FE4872 /* Documentation */,
+				42A82AD02016841C007290BD /* Frameworks */,
+				121740C2B10D3878D5FF7434 /* Pods */,
 				421F0BB82011798600BE59AA /* Products */,
 				421F0BB92011798600BE59AA /* Source */,
 				421F0BC42011798700BE59AA /* Tests */,
-				42A82AD02016841C007290BD /* Frameworks */,
-				121740C2B10D3878D5FF7434 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};

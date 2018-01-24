@@ -49,4 +49,24 @@ public extension String {
         return self
     }
     
+    public func toDecimalPlaces(_ value: Int) -> String {
+        let charset: Character = "."
+        if let index = self.index(of: charset) {
+            let distanceToDecimal = self.distance(from: self.startIndex, to: index).advanced(by: value + 1)
+            if let lastIndex = self.index(self.startIndex, offsetBy: distanceToDecimal, limitedBy: self.endIndex) {
+                return String(self[..<lastIndex])
+            } else {
+                return self
+            }
+        }
+        return self
+    }
+    
+    var wholeValue: String {
+        if let decimalIndex = self.index(of: ".") {
+            return String(self[..<decimalIndex])
+        } else {
+            return self
+        }
+    }
 }
