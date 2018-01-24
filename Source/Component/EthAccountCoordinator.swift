@@ -13,12 +13,12 @@ open class EthAccountConfiguration {
     public var username: String
     public var password: String
     
-    init(username: String, password: String) {
+    public init(username: String, password: String) {
         self.username = username
         self.password = password
     }
     
-    public static let `default`: EthAccountConfiguration = {
+    open static let `default`: EthAccountConfiguration = {
         return EthAccountConfiguration(username: "test", password: "qwerty")
     }()
     
@@ -36,7 +36,7 @@ open class EthAccountCoordinator {
         return EthAccountCoordinator(EthAccountConfiguration.default)
     }()
     
-    public var account: GethAccount? {
+    open var account: GethAccount? {
         return _account
     }
     
@@ -45,7 +45,7 @@ open class EthAccountCoordinator {
         _ = createAccount(configuration.password, at: configuration.username)
     }
     
-    public func createAccount(_ password: String, at: String) -> GethAccount? {
+    open func createAccount(_ password: String, at: String) -> GethAccount? {
         if _keystore == nil {
             _createKeystore(at)
         }
@@ -77,10 +77,10 @@ open class EthAccountCoordinator {
     
     // TODO:- Update later to handle multiple accounts for wallet
     
-    private func _getAccount(_ password: String) -> GethAccount? {
+    private func _getAccount(_ password: String, at: Int = 0) -> GethAccount? {
         if let accounts = _keystore?.getAccounts() {
             do {
-                _account = try accounts.get(0)
+                _account = try accounts.get(at)
                 if _account != nil {
                     try _keystore?.unlock(_account!, passphrase: password)
                 }
@@ -98,7 +98,7 @@ open class EthAccountCoordinator {
 
 extension EthAccountCoordinator {
     
-    func sign(address: GethAddress, encodedFunctionData: Data, nonce: Int64, gasLimit: GethBigInt, gasPrice: GethBigInt) -> GethTransaction? {
+    open func sign(address: GethAddress, encodedFunctionData: Data, nonce: Int64, gasLimit: GethBigInt, gasPrice: GethBigInt) -> GethTransaction? {
         guard let keystore = _keystore, let account = _account else {
             // TODO:- We can return Error here/Throw one
             print("Create keystore/account first")
