@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		421F0BC12011798700BE59AA /* EtherS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421F0BB72011798600BE59AA /* EtherS.framework */; };
+		421F0BC12011798700BE59AA /* web3swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421F0BB72011798600BE59AA /* web3swift.framework */; };
 		421F0BC62011798700BE59AA /* EtherSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421F0BC52011798700BE59AA /* EtherSTests.swift */; };
-		421F0BC82011798700BE59AA /* EtherS.h in Headers */ = {isa = PBXBuildFile; fileRef = 421F0BBA2011798600BE59AA /* EtherS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421F0BC82011798700BE59AA /* web3swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 421F0BBA2011798600BE59AA /* web3swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		422BFFE72012A9CE00899EF8 /* EthFunctionEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4235D28B20128B1F00095D73 /* EthFunctionEncoder.swift */; };
 		422BFFE82012AAE900899EF8 /* EthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4235D28820128B0300095D73 /* EthError.swift */; };
 		422BFFE92012AAEC00899EF8 /* EthFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4235D28920128B0300095D73 /* EthFunction.swift */; };
 		422BFFEA2012AAEE00899EF8 /* EthType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4235D28720128B0300095D73 /* EthType.swift */; };
 		422BFFEB2012AAF300899EF8 /* EthTypeEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4235D28C20128B1F00095D73 /* EthTypeEncoder.swift */; };
 		427BDE3A20180F6B0054F870 /* EthAccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427BDE3920180F6B0054F870 /* EthAccountCoordinator.swift */; };
-		42B0A84B2011811000FE4872 /* EtherS.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 42B0A84A2011811000FE4872 /* EtherS.podspec */; };
+		42B0A84B2011811000FE4872 /* web3swift.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 42B0A84A2011811000FE4872 /* web3swift.podspec */; };
 		42B0A8502011865A00FE4872 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 42B0A84F2011865A00FE4872 /* LICENSE */; };
-		42B0A8532011931800FE4872 /* EtherS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B0A8522011931800FE4872 /* EtherS.swift */; };
-		539ED5427AF39C1EFE57A619 /* Pods_EtherSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B013A9DA8547894F9147FE63 /* Pods_EtherSTests.framework */; };
-		671D2E1DF8D461D37A23D382 /* Pods_EtherS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5DE95DA13D523819C4FD74 /* Pods_EtherS.framework */; };
+		42B0A8532011931800FE4872 /* web3swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B0A8522011931800FE4872 /* web3swift.swift */; };
+		8E986D6671B64E5ABDF7246F /* Pods_web3swiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8A0192F629A5DABC806F64 /* Pods_web3swiftTests.framework */; };
+		B82E4D7EB970A99222F8ED9F /* Pods_web3swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56EED7AF5E131285DFF2FD3 /* Pods_web3swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C87EBFEA40EEC6A7A59439C /* Pods-EtherSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtherSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EtherSTests/Pods-EtherSTests.release.xcconfig"; sourceTree = "<group>"; };
-		3042FD99213A062E4B28CB05 /* Pods-EtherS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtherS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EtherS/Pods-EtherS.debug.xcconfig"; sourceTree = "<group>"; };
-		3E10B1B4D2C46BC70F8A8F54 /* Pods-EtherSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtherSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EtherSTests/Pods-EtherSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3FE52702E04129664F99683E /* Pods-EtherS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtherS.release.xcconfig"; path = "Pods/Target Support Files/Pods-EtherS/Pods-EtherS.release.xcconfig"; sourceTree = "<group>"; };
-		421F0BB72011798600BE59AA /* EtherS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EtherS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		421F0BBA2011798600BE59AA /* EtherS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EtherS.h; sourceTree = "<group>"; };
+		0659C86579CDEF23AE69D10B /* Pods-web3swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-web3swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-web3swift/Pods-web3swift.release.xcconfig"; sourceTree = "<group>"; };
+		35AD9756ED22F4713E40EA28 /* Pods-web3swiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-web3swiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-web3swiftTests/Pods-web3swiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		421F0BB72011798600BE59AA /* web3swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = web3swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		421F0BBA2011798600BE59AA /* web3swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = web3swift.h; sourceTree = "<group>"; };
 		421F0BBB2011798700BE59AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		421F0BC02011798700BE59AA /* EtherSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EtherSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		421F0BC02011798700BE59AA /* web3swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = web3swiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		421F0BC52011798700BE59AA /* EtherSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherSTests.swift; sourceTree = "<group>"; };
 		421F0BC72011798700BE59AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4235D28720128B0300095D73 /* EthType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthType.swift; sourceTree = "<group>"; };
@@ -53,11 +51,13 @@
 		427BDE3920180F6B0054F870 /* EthAccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthAccountCoordinator.swift; sourceTree = "<group>"; };
 		427BDE4120191DEB0054F870 /* GethBigInt+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GethBigInt+Extension.swift"; sourceTree = "<group>"; };
 		42A82AD12016841D007290BD /* Geth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Geth.framework; sourceTree = "<group>"; };
-		42B0A84A2011811000FE4872 /* EtherS.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EtherS.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		42B0A84A2011811000FE4872 /* web3swift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = web3swift.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		42B0A84F2011865A00FE4872 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		42B0A8522011931800FE4872 /* EtherS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherS.swift; sourceTree = "<group>"; };
-		B013A9DA8547894F9147FE63 /* Pods_EtherSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EtherSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC5DE95DA13D523819C4FD74 /* Pods_EtherS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EtherS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42B0A8522011931800FE4872 /* web3swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = web3swift.swift; sourceTree = "<group>"; };
+		B56EED7AF5E131285DFF2FD3 /* Pods_web3swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_web3swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD8A0192F629A5DABC806F64 /* Pods_web3swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_web3swiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED2B068C99DC33C768476A47 /* Pods-web3swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-web3swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-web3swift/Pods-web3swift.debug.xcconfig"; sourceTree = "<group>"; };
+		FCCBD867E3A8461BD76E9BC2 /* Pods-web3swiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-web3swiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-web3swiftTests/Pods-web3swiftTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				671D2E1DF8D461D37A23D382 /* Pods_EtherS.framework in Frameworks */,
+				B82E4D7EB970A99222F8ED9F /* Pods_web3swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,43 +73,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				421F0BC12011798700BE59AA /* EtherS.framework in Frameworks */,
-				539ED5427AF39C1EFE57A619 /* Pods_EtherSTests.framework in Frameworks */,
+				421F0BC12011798700BE59AA /* web3swift.framework in Frameworks */,
+				8E986D6671B64E5ABDF7246F /* Pods_web3swiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		121740C2B10D3878D5FF7434 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3042FD99213A062E4B28CB05 /* Pods-EtherS.debug.xcconfig */,
-				3FE52702E04129664F99683E /* Pods-EtherS.release.xcconfig */,
-				3E10B1B4D2C46BC70F8A8F54 /* Pods-EtherSTests.debug.xcconfig */,
-				1C87EBFEA40EEC6A7A59439C /* Pods-EtherSTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		421F0BAD2011798600BE59AA = {
 			isa = PBXGroup;
 			children = (
 				421F0BD220117B4200BE59AA /* Deployment */,
 				42B0A851201186AD00FE4872 /* Documentation */,
 				42A82AD02016841C007290BD /* Frameworks */,
-				121740C2B10D3878D5FF7434 /* Pods */,
 				421F0BB82011798600BE59AA /* Products */,
 				421F0BB92011798600BE59AA /* Source */,
 				421F0BC42011798700BE59AA /* Tests */,
+				7FB02B7116E85A2EA66D026D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		421F0BB82011798600BE59AA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				421F0BB72011798600BE59AA /* EtherS.framework */,
-				421F0BC02011798700BE59AA /* EtherSTests.xctest */,
+				421F0BB72011798600BE59AA /* web3swift.framework */,
+				421F0BC02011798700BE59AA /* web3swiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,7 +108,7 @@
 			children = (
 				4235D28520128AE200095D73 /* Abi */,
 				427BDE3820180F450054F870 /* Component */,
-				42B0A8522011931800FE4872 /* EtherS.swift */,
+				42B0A8522011931800FE4872 /* web3swift.swift */,
 				427BDE362017F18A0054F870 /* Extension */,
 				42B0A8542012839300FE4872 /* Supporting Files */,
 			);
@@ -138,7 +127,7 @@
 		421F0BD220117B4200BE59AA /* Deployment */ = {
 			isa = PBXGroup;
 			children = (
-				42B0A84A2011811000FE4872 /* EtherS.podspec */,
+				42B0A84A2011811000FE4872 /* web3swift.podspec */,
 				42B0A84F2011865A00FE4872 /* LICENSE */,
 			);
 			name = Deployment;
@@ -185,8 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				42A82AD12016841D007290BD /* Geth.framework */,
-				BC5DE95DA13D523819C4FD74 /* Pods_EtherS.framework */,
-				B013A9DA8547894F9147FE63 /* Pods_EtherSTests.framework */,
+				B56EED7AF5E131285DFF2FD3 /* Pods_web3swift.framework */,
+				DD8A0192F629A5DABC806F64 /* Pods_web3swiftTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -201,10 +190,21 @@
 		42B0A8542012839300FE4872 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				421F0BBA2011798600BE59AA /* EtherS.h */,
+				421F0BBA2011798600BE59AA /* web3swift.h */,
 				421F0BBB2011798700BE59AA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FB02B7116E85A2EA66D026D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED2B068C99DC33C768476A47 /* Pods-web3swift.debug.xcconfig */,
+				0659C86579CDEF23AE69D10B /* Pods-web3swift.release.xcconfig */,
+				35AD9756ED22F4713E40EA28 /* Pods-web3swiftTests.debug.xcconfig */,
+				FCCBD867E3A8461BD76E9BC2 /* Pods-web3swiftTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,52 +214,52 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				421F0BC82011798700BE59AA /* EtherS.h in Headers */,
+				421F0BC82011798700BE59AA /* web3swift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		421F0BB62011798600BE59AA /* EtherS */ = {
+		421F0BB62011798600BE59AA /* web3swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 421F0BCB2011798700BE59AA /* Build configuration list for PBXNativeTarget "EtherS" */;
+			buildConfigurationList = 421F0BCB2011798700BE59AA /* Build configuration list for PBXNativeTarget "web3swift" */;
 			buildPhases = (
-				BF5E776CC989F7F649A6A7DA /* [CP] Check Pods Manifest.lock */,
+				FD3DD444E2ECF9C682F59280 /* [CP] Check Pods Manifest.lock */,
 				421F0BB22011798600BE59AA /* Sources */,
 				421F0BB32011798600BE59AA /* Frameworks */,
 				421F0BB42011798600BE59AA /* Headers */,
 				421F0BB52011798600BE59AA /* Resources */,
-				D255E199E2C72E554F00D2DA /* [CP] Copy Pods Resources */,
+				A5AE38AF7C50FDA686772158 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = EtherS;
+			name = web3swift;
 			productName = EtherS;
-			productReference = 421F0BB72011798600BE59AA /* EtherS.framework */;
+			productReference = 421F0BB72011798600BE59AA /* web3swift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		421F0BBF2011798700BE59AA /* EtherSTests */ = {
+		421F0BBF2011798700BE59AA /* web3swiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 421F0BCE2011798700BE59AA /* Build configuration list for PBXNativeTarget "EtherSTests" */;
+			buildConfigurationList = 421F0BCE2011798700BE59AA /* Build configuration list for PBXNativeTarget "web3swiftTests" */;
 			buildPhases = (
-				7DA53187C1DC9506DEBCE75A /* [CP] Check Pods Manifest.lock */,
+				D3996A21066DC2D04531203D /* [CP] Check Pods Manifest.lock */,
 				421F0BBC2011798700BE59AA /* Sources */,
 				421F0BBD2011798700BE59AA /* Frameworks */,
 				421F0BBE2011798700BE59AA /* Resources */,
-				48EE879C510441674471CCA7 /* [CP] Embed Pods Frameworks */,
-				9AA83352F6BE11F554DB971F /* [CP] Copy Pods Resources */,
+				5360CB585F64660DE066ADC6 /* [CP] Embed Pods Frameworks */,
+				B636BE71ED8C1539B1BBA0CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				421F0BD520117EE500BE59AA /* PBXTargetDependency */,
 			);
-			name = EtherSTests;
+			name = web3swiftTests;
 			productName = EtherSTests;
-			productReference = 421F0BC02011798700BE59AA /* EtherSTests.xctest */;
+			productReference = 421F0BC02011798700BE59AA /* web3swiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -283,7 +283,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 421F0BB12011798600BE59AA /* Build configuration list for PBXProject "EtherS" */;
+			buildConfigurationList = 421F0BB12011798600BE59AA /* Build configuration list for PBXProject "web3swift" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -295,8 +295,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				421F0BB62011798600BE59AA /* EtherS */,
-				421F0BBF2011798700BE59AA /* EtherSTests */,
+				421F0BB62011798600BE59AA /* web3swift */,
+				421F0BBF2011798700BE59AA /* web3swiftTests */,
 			);
 		};
 /* End PBXProject section */
@@ -307,7 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42B0A8502011865A00FE4872 /* LICENSE in Resources */,
-				42B0A84B2011811000FE4872 /* EtherS.podspec in Resources */,
+				42B0A84B2011811000FE4872 /* web3swift.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,13 +321,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		48EE879C510441674471CCA7 /* [CP] Embed Pods Frameworks */ = {
+		5360CB585F64660DE066ADC6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EtherSTests/Pods-EtherSTests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-web3swiftTests/Pods-web3swiftTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -336,28 +336,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtherSTests/Pods-EtherSTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-web3swiftTests/Pods-web3swiftTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7DA53187C1DC9506DEBCE75A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EtherSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9AA83352F6BE11F554DB971F /* [CP] Copy Pods Resources */ = {
+		A5AE38AF7C50FDA686772158 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -369,28 +351,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtherSTests/Pods-EtherSTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-web3swift/Pods-web3swift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BF5E776CC989F7F649A6A7DA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EtherS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D255E199E2C72E554F00D2DA /* [CP] Copy Pods Resources */ = {
+		B636BE71ED8C1539B1BBA0CB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -402,7 +366,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtherS/Pods-EtherS-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-web3swiftTests/Pods-web3swiftTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3996A21066DC2D04531203D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-web3swiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD3DD444E2ECF9C682F59280 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-web3swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -416,7 +416,7 @@
 				422BFFEA2012AAEE00899EF8 /* EthType.swift in Sources */,
 				422BFFE72012A9CE00899EF8 /* EthFunctionEncoder.swift in Sources */,
 				422BFFEB2012AAF300899EF8 /* EthTypeEncoder.swift in Sources */,
-				42B0A8532011931800FE4872 /* EtherS.swift in Sources */,
+				42B0A8532011931800FE4872 /* web3swift.swift in Sources */,
 				422BFFE82012AAE900899EF8 /* EthError.swift in Sources */,
 				422BFFE92012AAEC00899EF8 /* EthFunction.swift in Sources */,
 			);
@@ -435,7 +435,7 @@
 /* Begin PBXTargetDependency section */
 		421F0BD520117EE500BE59AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 421F0BB62011798600BE59AA /* EtherS */;
+			target = 421F0BB62011798600BE59AA /* web3swift */;
 			targetProxy = 421F0BD420117EE500BE59AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -560,7 +560,7 @@
 		};
 		421F0BCC2011798700BE59AA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3042FD99213A062E4B28CB05 /* Pods-EtherS.debug.xcconfig */;
+			baseConfigurationReference = ED2B068C99DC33C768476A47 /* Pods-web3swift.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
@@ -584,7 +584,7 @@
 					"$(inherited)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.radicalapp.EtherS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.radicalapp.web3swift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -595,7 +595,7 @@
 		};
 		421F0BCD2011798700BE59AA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FE52702E04129664F99683E /* Pods-EtherS.release.xcconfig */;
+			baseConfigurationReference = 0659C86579CDEF23AE69D10B /* Pods-web3swift.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
@@ -619,7 +619,7 @@
 					"$(inherited)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.radicalapp.EtherS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.radicalapp.web3swift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -629,14 +629,14 @@
 		};
 		421F0BCF2011798700BE59AA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E10B1B4D2C46BC70F8A8F54 /* Pods-EtherSTests.debug.xcconfig */;
+			baseConfigurationReference = 35AD9756ED22F4713E40EA28 /* Pods-web3swiftTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3K22BUS8RL;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.radicalapp.EtherSTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.radicalapp.web3swiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -645,14 +645,14 @@
 		};
 		421F0BD02011798700BE59AA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C87EBFEA40EEC6A7A59439C /* Pods-EtherSTests.release.xcconfig */;
+			baseConfigurationReference = FCCBD867E3A8461BD76E9BC2 /* Pods-web3swiftTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3K22BUS8RL;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.radicalapp.EtherSTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.radicalapp.web3swiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -662,7 +662,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		421F0BB12011798600BE59AA /* Build configuration list for PBXProject "EtherS" */ = {
+		421F0BB12011798600BE59AA /* Build configuration list for PBXProject "web3swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				421F0BC92011798700BE59AA /* Debug */,
@@ -671,7 +671,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		421F0BCB2011798700BE59AA /* Build configuration list for PBXNativeTarget "EtherS" */ = {
+		421F0BCB2011798700BE59AA /* Build configuration list for PBXNativeTarget "web3swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				421F0BCC2011798700BE59AA /* Debug */,
@@ -680,7 +680,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		421F0BCE2011798700BE59AA /* Build configuration list for PBXNativeTarget "EtherSTests" */ = {
+		421F0BCE2011798700BE59AA /* Build configuration list for PBXNativeTarget "web3swiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				421F0BCF2011798700BE59AA /* Debug */,

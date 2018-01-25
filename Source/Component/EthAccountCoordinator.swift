@@ -1,6 +1,6 @@
 //
 //  EthAccountCoordinator.swift
-//  EtherS
+//  web3swift
 //
 //  Created by Sameer Khavanekar on 1/23/18.
 //  Copyright © 2018 Radical App LLC. All rights reserved.

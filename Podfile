@@ -1,6 +1,4 @@
-workspace 'EtherS.xcworkspace'
 platform :ios, '9.0'
-use_frameworks!
 
 def testing_pods
   pod 'Geth', '1.7.3'
@@ -8,13 +6,12 @@ def testing_pods
 end
 
 
-target 'EtherS' do
-  project 'EtherS'
-
-  # Pods for EtherS
+target 'web3swift' do
+  use_frameworks!
+  # Pods for web3swift
   testing_pods
 
-  target 'EtherSTests' do
+  target 'web3swiftTests' do
     inherit! :search_paths
     # Pods for testing
   end

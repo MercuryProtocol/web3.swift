@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "421F0BB62011798600BE59AA"
-               BuildableName = "EtherS.framework"
-               BlueprintName = "EtherS"
-               ReferencedContainer = "container:EtherS.xcodeproj">
+               BuildableName = "web3swift.framework"
+               BlueprintName = "web3swift"
+               ReferencedContainer = "container:web3swift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,9 +35,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "421F0BBF2011798700BE59AA"
-               BuildableName = "EtherSTests.xctest"
-               BlueprintName = "EtherSTests"
-               ReferencedContainer = "container:EtherS.xcodeproj">
+               BuildableName = "web3swiftTests.xctest"
+               BlueprintName = "web3swiftTests"
+               ReferencedContainer = "container:web3swift.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "421F0BB62011798600BE59AA"
-            BuildableName = "EtherS.framework"
-            BlueprintName = "EtherS"
-            ReferencedContainer = "container:EtherS.xcodeproj">
+            BuildableName = "web3swift.framework"
+            BlueprintName = "web3swift"
+            ReferencedContainer = "container:web3swift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -68,9 +68,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "421F0BB62011798600BE59AA"
-            BuildableName = "EtherS.framework"
-            BlueprintName = "EtherS"
-            ReferencedContainer = "container:EtherS.xcodeproj">
+            BuildableName = "web3swift.framework"
+            BlueprintName = "web3swift"
+            ReferencedContainer = "container:web3swift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -86,9 +86,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "421F0BB62011798600BE59AA"
-            BuildableName = "EtherS.framework"
-            BlueprintName = "EtherS"
-            ReferencedContainer = "container:EtherS.xcodeproj">
+            BuildableName = "web3swift.framework"
+            BlueprintName = "web3swift"
+            ReferencedContainer = "container:web3swift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

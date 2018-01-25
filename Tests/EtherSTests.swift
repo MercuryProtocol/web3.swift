@@ -1,15 +1,15 @@
 //
-//  EtherSTests.swift
-//  EtherSTests
+//  web3swiftTests.swift
+//  web3swiftTests
 //
 //  Created by Sameer Khavanekar on 1/18/18.
 //  Copyright © 2018 Radical App LLC. All rights reserved.
 //
 
 import XCTest
-@testable import EtherS
+@testable import web3swift
 
-class EtherSTests: XCTestCase {
+class web3swiftTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
