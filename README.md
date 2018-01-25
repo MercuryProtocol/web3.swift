@@ -1,11 +1,7 @@
 ![web3swift: Elegant Blockchaining in Swift](https://raw.githubusercontent.com/web3swift/web3swift/master/web3swift.png)
-
-[![Build Status](https://travis-ci.org/web3swift/web3swift.svg?branch=master)](https://travis-ci.org/web3swift/web3swift)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/web3swift.svg)](https://img.shields.io/cocoapods/v/web3swift.svg)
-[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/cocoapods/p/web3swift.svg?style=flat)](https://web3swift.github.io/web3swift)
 [![Twitter](https://img.shields.io/badge/twitter-@web3swiftSF-blue.svg?style=flat)](http://twitter.com/web3swiftSF)
-[![Gitter](https://badges.gitter.im/web3swift/web3swift.svg)](https://gitter.im/web3swift/web3swift?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 web3swift is a library written in Swift.
 
@@ -16,10 +12,7 @@ web3swift is a library written in Swift.
 - [Communication](#communication)
 - [Installation](#installation)
 - [Usage](Documentation/Usage.md)
-    - **Intro -** [Making a Request](Documentation/Usage.md#making-a-request), [Encoding](Documentation/Usage.md#encoding), [Response Validation](Documentation/Usage.md#response-validation), [Response Caching](Documentation/Usage.md#response-caching)
-- [Advanced Usage](Documentation/AdvancedUsage.md)
-	- **Account Creation -** [Signing](Documentation/AdvancedUsage.md#session-manager), [Signing](Documentation/AdvancedUsage.md#session-delegate)
-	- **Signing -** [Signing](Documentation/AdvancedUsage.md#routing-requests)
+    - **Intro -** [Creating Account](Documentation/Usage.md#making-a-request), [Encoding](Documentation/Usage.md#encoding)
 - [FAQ](#faq)
 - [Credits](#credits)
 - [License](#license)
