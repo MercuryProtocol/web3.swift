@@ -13,7 +13,7 @@ open class EthAccountConfiguration {
     public var namespace: String?
     public var password: String?
     
-    public init(namespace: String?, password: String?, shouldCreateAccount: Bool) {
+    public init(namespace: String?, password: String?) {
         self.namespace = namespace
         self.password = password
     }
