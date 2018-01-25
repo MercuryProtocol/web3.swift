@@ -91,7 +91,7 @@ open class EthAccountCoordinator {
     
     fileprivate func _createAccount(_ keystore: GethKeyStore, password: String) -> GethAccount? {
         do {
-            if let account = _getAccount(password) {
+            if let account = getAccount(password) {
                 return account
             } else {
                 let account = try keystore.newAccount(password)
@@ -105,7 +105,7 @@ open class EthAccountCoordinator {
     
     // TODO:- Update later to handle multiple accounts for wallet
     
-    private func _getAccount(_ password: String, at: Int = 0) -> GethAccount? {
+    open func getAccount(_ password: String, at: Int = 0) -> GethAccount? {
         if let accounts = _keystore?.getAccounts() {
             do {
                 let account: GethAccount? = try accounts.get(at)
