@@ -53,7 +53,7 @@
 		427BDE3920180F6B0054F870 /* EthAccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthAccountCoordinator.swift; sourceTree = "<group>"; };
 		427BDE4120191DEB0054F870 /* GethBigInt+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GethBigInt+Extension.swift"; sourceTree = "<group>"; };
 		42A82AD12016841D007290BD /* Geth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Geth.framework; sourceTree = "<group>"; };
-		42B0A84A2011811000FE4872 /* EtherS.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EtherS.podspec; sourceTree = SOURCE_ROOT; };
+		42B0A84A2011811000FE4872 /* EtherS.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EtherS.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		42B0A84F2011865A00FE4872 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		42B0A8522011931800FE4872 /* EtherS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherS.swift; sourceTree = "<group>"; };
 		B013A9DA8547894F9147FE63 /* Pods_EtherSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EtherSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };

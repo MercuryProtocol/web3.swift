@@ -16,3 +16,4 @@ public func encode(_ function: EthFunction) -> Data {
 public func sign(address: GethAddress, encodedFunctionData: Data, nonce: Int64, gasLimit: GethBigInt, gasPrice: GethBigInt) -> GethTransaction? {
     return EthAccountCoordinator.default.sign(address: address, encodedFunctionData: encodedFunctionData, nonce: nonce, gasLimit: gasLimit, gasPrice: gasPrice)
 }
+

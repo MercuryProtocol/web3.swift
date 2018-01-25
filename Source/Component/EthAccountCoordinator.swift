@@ -147,6 +147,19 @@ open class EthAccountCoordinator {
         }
     }
     
+    open func updatePassword(_ passphrase: String, newPassphrase: String) -> Bool {
+        guard let keystore = keystore, let account = account else {
+            return false
+        }
+        do {
+            try keystore.update(currentAccount, passphrase: passphrase, newPassphrase: newPassphrase)
+            defaultConfiguration.password = newPassphrase
+            return true
+        } catch {
+            print("Failed to update! Try again \(error)")
+            return false
+        }
+    }
     
     open func drain() {
         _keystore = nil
