@@ -152,7 +152,7 @@ open class EthAccountCoordinator {
             return false
         }
         do {
-            try keystore.update(currentAccount, passphrase: passphrase, newPassphrase: newPassphrase)
+            try keystore.update(account, passphrase: passphrase, newPassphrase: newPassphrase)
             defaultConfiguration.password = newPassphrase
             return true
         } catch {
