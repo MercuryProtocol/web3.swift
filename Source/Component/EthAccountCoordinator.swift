@@ -127,18 +127,18 @@ open class EthAccountCoordinator {
         }
         do {
             if let jsonKeyData = jsonKey.data(using: .utf8) {
-                if let newAccount = try keystore.importKey(jsonKeyData, passphrase: passphrase, newPassphrase: newPassphrase) {
-                    _account = newAccount
-                    defaultConfiguration.password = newPassphrase
-                } else {
-                    return nil
-                }
+                let newAccount = try keystore.importKey(jsonKeyData, passphrase: passphrase, newPassphrase: newPassphrase)
+                _account = newAccount
+                defaultConfiguration.password = newPassphrase
+                return newAccount
+            } else {
+                print("Invalid account json file")
+                return nil
             }
         } catch {
-            DDLogError("Import failed try again \(error)")
+            print("Import failed try again \(error)")
             return nil
         }
-        return nil
     }
     
     
