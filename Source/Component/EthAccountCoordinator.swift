@@ -121,6 +121,27 @@ open class EthAccountCoordinator {
     }
     
     
+    open func importPrivateKey(_ jsonKey: String, passphrase: String, newPassphrase: String) -> GethAccount? {
+        guard let keystore = keystore else {
+            return nil
+        }
+        do {
+            if let jsonKeyData = jsonKey.data(using: .utf8) {
+                if let newAccount = try keystore.importKey(jsonKeyData, passphrase: passphrase, newPassphrase: newPassphrase) {
+                    _account = newAccount
+                    defaultConfiguration.password = newPassphrase
+                } else {
+                    return nil
+                }
+            }
+        } catch {
+            DDLogError("Import failed try again \(error)")
+            return nil
+        }
+        return nil
+    }
+    
+    
     open func drain() {
         _keystore = nil
         _account = nil
