@@ -42,8 +42,14 @@ open class EthAccountCoordinator {
     }
     
     open var account: GethAccount? {
-        return _account
+        get {
+            return _account
+        }
+        set {
+            _account = newValue
+        }
     }
+    
     
     open func setup(_ configuration: EthAccountConfiguration) -> (GethKeyStore?, GethAccount?) {
         defaultConfiguration = configuration
