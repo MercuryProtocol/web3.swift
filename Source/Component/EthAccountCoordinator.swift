@@ -36,6 +36,11 @@ open class EthAccountCoordinator {
         return EthAccountCoordinator()
     }()
     
+    
+    open var keystore: GethKeyStore? {
+        return _keystore
+    }
+    
     open var account: GethAccount? {
         return _account
     }
@@ -116,7 +121,7 @@ open class EthAccountCoordinator {
     }
     
     
-    public func drain() {
+    open func drain() {
         _keystore = nil
         _account = nil
         _gethContext = nil
