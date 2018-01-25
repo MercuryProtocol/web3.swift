@@ -19,7 +19,7 @@ open class EthAccountConfiguration {
     }
     
     open static let `default`: EthAccountConfiguration = {
-        return EthAccountConfiguration(namespace: "wallet", password: "qwerty", shouldCreateAccount: true)
+        return EthAccountConfiguration(namespace: "wallet", password: "qwerty")
     }()
     
 }
