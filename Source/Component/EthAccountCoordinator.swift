@@ -116,6 +116,12 @@ open class EthAccountCoordinator {
     }
     
     
+    public func drain() {
+        _keystore = nil
+        _account = nil
+        _gethContext = nil
+    }
+    
 }
 
 
