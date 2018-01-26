@@ -97,7 +97,13 @@ let (keystore, _) = EthAccountCoordinator.default.setup(configuration)
 
 ### Encoding Transaction
 ```bash
-let transferFunction = EthFunction(name: Constants.transferFunctionName, inputParameters: [toAccountAddress, amount])
+var addressError: NSError? = nil
+let gethToAccountAddress: GethAddress! = GethNewAddressFromHex("0x39db95b4f60bd75846c46df165d9e854b3cf1b56", &addressError)
+guard let gethAmount = GethBigInt.bigInt(amount) else {
+    print("Invalid amount")
+    return
+}
+let transferFunction = EthFunction(name: "transfer", inputParameters: [toAccountAddress, amount])
 let encodedTransferFunction = web3swift.encode(transferFunction)
 ```
 
