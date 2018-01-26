@@ -27,10 +27,9 @@ web3swift is a library written in Swift.
 
 ## Component Libraries
 
-In order to keep web3swift focused specifically on core networking implementations, additional component libraries have been created by the [web3swift Software Foundation](https://github.com/web3swift/Foundation) to bring additional functionality to the web3swift ecosystem.
+In order to keep web3swift focused specifically on core ethereum based utility functionality, additional component libraries will be created by the [Radical App LLC](https://github.com/web3swift/Foundation) to bring additional functionality to the mercury protocol ecosystem.
 
-- [web3swiftImage](https://github.com/web3swift/web3swiftImage) - An image library including image response serializers, `UIImage` and `UIImageView` extensions, custom image filters, an auto-purging in-memory cache and a priority-based image downloading system.
-- [web3swiftNetworkActivityIndicator](https://github.com/web3swift/web3swiftNetworkActivityIndicator) - Controls the visibility of the network activity indicator on iOS using web3swift. It contains configurable delay timers to help mitigate flicker and can support `URLSession` instances not managed by web3swift.
+- [Mercury Wallet](https://github.com/mercuryprotocol/MercuryWallet) - Wallet App to use with mercury protocol.
 
 ## Requirements
 
