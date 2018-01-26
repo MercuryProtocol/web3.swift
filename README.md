@@ -14,14 +14,13 @@ Table of contents
 *  [Migration Guides](#migration-guides)
 *  [Communication](#communication)
 *  [Installation](#installation)
-* [Usage](Documentation/Usage.md)
-    - **Intro -** [Creating Account](Documentation/Usage.md#making-a-request), [Encoding](Documentation/Usage.md#encoding)
-    
-* [Improvements](#improvements)
+*  [Usage](Documentation/Usage.md)
+    * **Intro -** [Creating Account](Documentation/Usage.md#making-a-request), [Encoding](Documentation/Usage.md#encoding)
+*  [Improvements](#improvements)
 *  [FAQ](#faq)
-* [Credits](#credits)
-* [Contributors](#contributors)
-* [License](#license)
+*  [Credits](#credits)
+*  [Contributors](#contributors)
+*  [License](#license)
 
 ## Features
 
@@ -58,7 +57,7 @@ In order to keep web3swift focused specifically on core ethereum based utility f
 [CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
 
 ```bash
-$ gem install cocoapods
+$ sudo gem install cocoapods
 ```
 
 > CocoaPods 1.1+ is required to build web3swift 4.0+.
@@ -68,9 +67,9 @@ To integrate web3swift into your Xcode project using CocoaPods, specify it in yo
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
-use_frameworks!
 
 target '<Your Target Name>' do
+    use_frameworks!
     pod 'web3swift', '~> 0.0.6'
 end
 ```
@@ -81,6 +80,16 @@ Then, run the following command:
 $ pod install
 ```
 
+## USAGE
+
+### Create Account
+```bash
+let (_, account) = EthAccountCoordinator.default.setup(EthAccountConfiguration.default)
+```
+or
+```bash
+let (_, account) = EthAccountCoordinator.default.setup(EthAccountConfiguration.default)
+```
 
 ## FAQ
 
