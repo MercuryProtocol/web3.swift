@@ -84,10 +84,6 @@ $ pod install
 
 ### Create Account
 ```bash
-let (_, account) = EthAccountCoordinator.default.setup(EthAccountConfiguration.default)
-```
-or 
-```bash
 let configuration = EthAccountConfiguration(namespace: "wallet", password: "qwerty")
 let (keystore, _) = EthAccountCoordinator.default.setup(configuration)
 ```
@@ -99,6 +95,16 @@ let configuration = EthAccountConfiguration(namespace: "wallet", password: nil)
 let (keystore, _) = EthAccountCoordinator.default.setup(configuration)
 ```
 
+### Encoding Transaction
+```bash
+let transferFunction = EthFunction(name: Constants.transferFunctionName, inputParameters: [toAccountAddress, amount])
+let encodedTransferFunction = web3swift.encode(transferFunction)
+```
+
+### Signing Transaction
+```bash
+let signedTransaction = web3swift.sign(address: contractAddress, encodedFunctionData: encodedTransferFunction, nonce: nonce, gasLimit: Constants.gasLimit, gasPrice: Constants.gasPrice)
+```
 
 
 ## FAQ
