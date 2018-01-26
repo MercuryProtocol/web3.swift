@@ -5,17 +5,23 @@
 
 web3swift is a library written in Swift.
 
-- [Features](#features)
-- [Component Libraries](#component-libraries)
-- [Requirements](#requirements)
-- [Migration Guides](#migration-guides)
-- [Communication](#communication)
-- [Installation](#installation)
-- [Usage](Documentation/Usage.md)
+Table of contents
+===
+
+*  [Features](#features)
+*  [Component Libraries](#component-libraries)
+*  [Requirements](#requirements)
+*  [Migration Guides](#migration-guides)
+*  [Communication](#communication)
+*  [Installation](#installation)
+* [Usage](Documentation/Usage.md)
     - **Intro -** [Creating Account](Documentation/Usage.md#making-a-request), [Encoding](Documentation/Usage.md#encoding)
-- [FAQ](#faq)
-- [Credits](#credits)
-- [License](#license)
+    
+* [Improvements](#improvements)
+*  [FAQ](#faq)
+* [Credits](#credits)
+* [Contributors](#contributors)
+* [License](#license)
 
 ## Features
 
@@ -85,6 +91,13 @@ web3swift is
 ## Credits
 
 web3swift is owned and maintained by the [Radical App LLC](http://www.mercuryprotocol.com). You can follow them on Twitter at [@MercuryProtocol](https://twitter.com/mercuryprotocol) for project updates and releases.
+
+## Contributors
+
+* [Sameer Khavanekar](sameer@mercuryprotocol.com)
+* [Rohit Kotian](rohit@mercuryprotocol.com)
+
+If you do want to participate please follow the [guideline](CONTRIBUTING.MD).
 
 ### Security Disclosure
 
