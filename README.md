@@ -97,8 +97,9 @@ let (keystore, _) = EthAccountCoordinator.default.setup(configuration)
 ### Encoding Transaction
 ```bash
 var addressError: NSError? = nil
+let amountToTransfer = 5
 let gethToAccountAddress: GethAddress! = GethNewAddressFromHex("0x39db95b4f60bd75846c46df165d9e854b3cf1b56", &addressError)
-guard let gethAmount = GethBigInt.bigInt(amount) else {
+guard let amount = GethBigInt.bigInt(amountToTransfer) else {
     print("Invalid amount")
     return
 }
