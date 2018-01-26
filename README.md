@@ -1,9 +1,8 @@
-![web3swift: Elegant Blockchaining in Swift](https://raw.githubusercontent.com/web3swift/web3swift/master/web3swift.png)
 [![CocoaPods Compatible](https://img.shields.io/badge/pod-1.4.1-blue.svg)](https://img.shields.io/badge/pod-1.4.1-blue.svg)
 [![Platform](https://img.shields.io/cocoapods/p/web3swift.svg?style=flat)](https://web3swift.github.io/web3swift)
 [![Twitter](https://img.shields.io/badge/twitter-@mecruryprotocol-blue.svg?style=flat)](https://twitter.com/mercuryprotocol)
 
-web3swift is a library written in Swift.
+web3.js utility library written in Swift.
 
 Table of contents
 ===
@@ -118,7 +117,7 @@ let signedTransaction = web3swift.sign(address: contractAddress, encodedFunction
 
 ### What's web3swift?
 
-web3swift is
+web3swift is utility library written in swift which brings web3j encoding capabilities to Swift. Also, helps managements of account based on Geth.
 
 ## Credits
 
