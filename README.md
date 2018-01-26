@@ -1,7 +1,7 @@
 [![web3swift: Elegant Blockchaining in Swift](https://raw.githubusercontent.com/web3swift/web3swift/master/web3swift.png)]
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/web3swift.svg)](https://img.shields.io/cocoapods/v/web3swift.svg)
 [![Platform](https://img.shields.io/cocoapods/p/web3swift.svg?style=flat)](https://web3swift.github.io/web3swift)
-[![Twitter](https://img.shields.io/badge/twitter-@web3swiftSF-blue.svg?style=flat)](http://twitter.com/web3swiftSF)
+[![Twitter](https://img.shields.io/badge/twitter-@mecruryprotocol-blue.svg?style=flat)](https://twitter.com/mercuryprotocol)
 
 web3swift is a library written in Swift.
 
