@@ -14,7 +14,7 @@ Table of contents
 *  [Communication](#communication)
 *  [Installation](#installation)
 *  [Usage](Documentation/Usage.md)
-    * **Intro -** [Creating Account](#Create Account), [Encoding](Encoding Transaction)
+    * **Intro -** [Creating Account](##Create Account), [Encoding](Encoding Transaction)
 *  [Improvements](#improvements)
 *  [FAQ](#faq)
 *  [Credits](#credits)
