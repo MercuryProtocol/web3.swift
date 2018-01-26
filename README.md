@@ -128,7 +128,7 @@ web3swift is owned and maintained by the [Radical App LLC](http://www.mercurypro
 * [Sameer Khavanekar](sameer@mercuryprotocol.com)
 * [Rohit Kotian](rohit@mercuryprotocol.com)
 
-If you do want to participate please follow the [guideline](CONTRIBUTING.MD).
+If you do want to participate please follow the [guideline](CONTRIBUTING.md).
 
 ### Security Disclosure
 
