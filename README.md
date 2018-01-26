@@ -1,5 +1,5 @@
-[![web3swift: Elegant Blockchaining in Swift](https://raw.githubusercontent.com/web3swift/web3swift/master/web3swift.png)]
-[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/web3swift.svg)](https://img.shields.io/cocoapods/v/web3swift.svg)
+![web3swift: Elegant Blockchaining in Swift](https://raw.githubusercontent.com/web3swift/web3swift/master/web3swift.png)
+[![CocoaPods Compatible](https://img.shields.io/badge/pod-1.4.1-blue.svg)](https://img.shields.io/badge/pod-1.4.1-blue.svg)
 [![Platform](https://img.shields.io/cocoapods/p/web3swift.svg?style=flat)](https://web3swift.github.io/web3swift)
 [![Twitter](https://img.shields.io/badge/twitter-@mecruryprotocol-blue.svg?style=flat)](https://twitter.com/mercuryprotocol)
 
