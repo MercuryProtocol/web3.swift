@@ -86,10 +86,20 @@ $ pod install
 ```bash
 let (_, account) = EthAccountCoordinator.default.setup(EthAccountConfiguration.default)
 ```
-or
+or 
 ```bash
-let (_, account) = EthAccountCoordinator.default.setup(EthAccountConfiguration.default)
+let configuration = EthAccountConfiguration(namespace: "wallet", password: "qwerty")
+let (keystore, _) = EthAccountCoordinator.default.setup(configuration)
 ```
+This will create keystore and create default account.
+
+If you don't want to create account, this can be achieved by
+```bash
+let configuration = EthAccountConfiguration(namespace: "wallet", password: nil)
+let (keystore, _) = EthAccountCoordinator.default.setup(configuration)
+```
+
+
 
 ## FAQ
 
