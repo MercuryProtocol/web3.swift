@@ -136,4 +136,4 @@ If you believe you have identified a security vulnerability with web3swift, you 
 
 ## License
 
-web3swift is released under the MIT license. [See LICENSE](LICENSE.MD) for details.
+web3swift is released under the MIT license. [See LICENSE](LICENSE) for details.
