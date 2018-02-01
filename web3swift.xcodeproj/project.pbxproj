@@ -12,6 +12,8 @@
 		421F0BC82011798700BE59AA /* web3swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 421F0BBA2011798600BE59AA /* web3swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4226AD8E2022915800C542C3 /* SignatureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4226AD8D2022915800C542C3 /* SignatureData.swift */; };
 		4226AD902022935D00C542C3 /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4226AD8F2022935D00C542C3 /* Sign.swift */; };
+		4226AD912023CE3D00C542C3 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427BDE372017F2400054F870 /* String+Extension.swift */; };
+		4226AD922023CE4200C542C3 /* GethBigInt+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427BDE4120191DEB0054F870 /* GethBigInt+Extension.swift */; };
 		422BFFE72012A9CE00899EF8 /* EthFunctionEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4235D28B20128B1F00095D73 /* EthFunctionEncoder.swift */; };
 		422BFFE82012AAE900899EF8 /* EthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4235D28820128B0300095D73 /* EthError.swift */; };
 		422BFFE92012AAEC00899EF8 /* EthFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4235D28920128B0300095D73 /* EthFunction.swift */; };
@@ -440,6 +442,8 @@
 				422BFFEB2012AAF300899EF8 /* EthTypeEncoder.swift in Sources */,
 				42B0A8532011931800FE4872 /* web3swift.swift in Sources */,
 				422BFFE82012AAE900899EF8 /* EthError.swift in Sources */,
+				4226AD922023CE4200C542C3 /* GethBigInt+Extension.swift in Sources */,
+				4226AD912023CE3D00C542C3 /* String+Extension.swift in Sources */,
 				422BFFE92012AAEC00899EF8 /* EthFunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -69,4 +69,25 @@ public extension String {
             return self
         }
     }
+    
+    public func trimmingFirstConsecutiveCharacters(_ character: String) -> String? {
+        let pattern = "^\(character)+(?!$)"
+        do {
+            let regex = try NSRegularExpression(pattern: pattern, options: [])
+            let match = regex.firstMatch(in: self, options: [], range: NSRange(location: 0, length: self.count))
+            
+            if let match = match {
+                let startIndex = String.Index(encodedOffset: match.range.length)
+                let endIndex = String.Index(encodedOffset: self.count)
+                let result = self[startIndex..<endIndex]
+                return String(result)
+            } else {
+                return self
+            }
+        } catch {
+            print("Failed to create regex patter for given character")
+            return nil
+        }
+    }
+    
 }

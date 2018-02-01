@@ -78,8 +78,12 @@ Then, run the following command:
 ```bash
 $ pod install
 ```
+Sidenote: In order to run project, you will have to turn off bitcode support as Geth doesn't support bitcode. Please check:
+https://github.com/golang/go/issues/22395
 
 ## USAGE
+
+
 
 ### Create Account
 Create keystore and account with password.
