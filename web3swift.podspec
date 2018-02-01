@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "web3swift"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "A short description of web3swift."
   s.description  = <<-DESC
                         web3swift is a library currently only built for iOS platform. It's built on top of the [go-ethereum](https://github.com/ethereum/go-ethereum). This allows you to work with the Ethereum blockchain, without the additional overhead of having to write your own integration code for the platform.

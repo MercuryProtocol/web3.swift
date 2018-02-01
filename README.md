@@ -69,7 +69,7 @@ platform :ios, '9.0'
 
 target '<Your Target Name>' do
     use_frameworks!
-    pod 'web3swift', '~> 0.0.6'
+    pod 'web3swift', '~> 0.0.8'
 end
 ```
 

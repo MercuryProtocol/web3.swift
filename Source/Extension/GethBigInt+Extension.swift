@@ -11,7 +11,7 @@ import Geth
 
 public extension GethBigInt {
     
-    public static func bigInt(_ valueInEther: Int) -> GethBigInt? {
+    public static func bigInt(valueInEther: Int64) -> GethBigInt? {
         return bigInt(String(valueInEther))
     }
     

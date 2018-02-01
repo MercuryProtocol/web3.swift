@@ -18,11 +18,11 @@ public func sign(address: GethAddress, encodedFunctionData: Data, nonce: Int64, 
 }
 
 public func sign(message: Data) -> SignatureData? {
-    guard let defaultKeystore = EthAccountCoordinator.default.keystore, let defaultAccountAddress = EthAccountCoordinator.default.account?.getAddress() else {
+    guard let defaultKeystore = EthAccountCoordinator.default.keystore, let defaultAccount = EthAccountCoordinator.default.account, let password = EthAccountCoordinator.default.defaultConfiguration.password else {
         print("Default Account not set, Please use Sign.sign instead")
         return nil
     }
-    return Sign.sign(message: message, keystore: defaultKeystore, accountAddress: defaultAccountAddress)
+    return Sign.sign(message: message, keystore: defaultKeystore, account: defaultAccount, passphrase: password)
 }
 
 

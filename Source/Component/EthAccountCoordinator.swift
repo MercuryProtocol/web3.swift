@@ -173,34 +173,12 @@ open class EthAccountCoordinator {
 public extension EthAccountCoordinator {
     
     public func sign(address: GethAddress, encodedFunctionData: Data, nonce: Int64, gasLimit: GethBigInt, gasPrice: GethBigInt) -> GethTransaction? {
-        guard let password = defaultConfiguration.password else {
-            print("Password not set")
-            return nil
-        }
-        return sign(address: address, encodedFunctionData: encodedFunctionData, nonce: nonce, gasLimit: gasLimit, gasPrice: gasPrice, password: password)
-    }
-    
-    public func sign(address: GethAddress, encodedFunctionData: Data, nonce: Int64, gasLimit: GethBigInt, gasPrice: GethBigInt, password: String) -> GethTransaction? {
-        guard let keystore = _keystore, let account = _account else {
+        guard let password = defaultConfiguration.password, let keystore = _keystore, let account = _account else {
             // TODO:- We can return Error here/Throw one
             print("Create keystore/account first")
             return nil
         }
-        
-        do {
-            let amount = GethNewBigInt(0)
-            if let newTransaction = GethNewTransaction(nonce, address, amount, gasLimit, gasPrice, encodedFunctionData) {
-                try keystore.unlock(account, passphrase: password)
-                let finalTransaction = try keystore.signTx(account, tx: newTransaction, chainID: nil)
-                return finalTransaction
-            } else {
-                print("Failed to create new transaction")
-                return nil
-            }
-        } catch {
-            print("Failed to sign transaction")
-            return nil
-        }
+        return Sign.sign(keystore: keystore, account: account, address: address, encodedFunctionData: encodedFunctionData, nonce: nonce, gasLimit: gasLimit, gasPrice: gasPrice, password: password)
     }
     
 }
