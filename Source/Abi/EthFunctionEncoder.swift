@@ -32,45 +32,24 @@ open class EthFunctionEncoder {
         let amountEncoded = try! EthTypeEncoder.default.encode(amount)
         let txFeeEncoded = try! EthTypeEncoder.default.encode(txFee)
         
-        
+        var startIndex = 0
         for (index, byte) in addressEncoded.enumerated() {
-            print("index \(index) Byte is \(byte)")
+            if byte != 0 {
+                startIndex = index
+                break
+            }
         }
         
-        let byteArray = addressEncoded.bytes[12..<addressEncoded.bytes.count]
+        let byteArray = addressEncoded.bytes[startIndex..<addressEncoded.bytes.count]
         var combinedData = Data(bytes: byteArray)
         
         var addressHexString = addressEncoded.toHexString()
         let charSet = CharacterSet(charactersIn: "0")
         addressHexString = addressHexString.trimmingCharacters(in: charSet)
         
-        let addressEncodedData = try! EthTypeEncoder.default.encode(addressHexString)
-        
-        
         combinedData.append(amountEncoded)
         combinedData.append(txFeeEncoded)
-        
-        
-        print("Bytes \(amountEncoded.bytes) address \(amountEncoded.toHexString())")
-        print("Bytes \(txFeeEncoded.bytes) address \(txFeeEncoded.toHexString())")
-        
-        
-        
-        print("==============================================")
-        print("==============================================")
-        print("==============================================")
-        
-        let combinedEncodedHex = addressHexString + amountEncoded.toHexString() + txFeeEncoded.toHexString()
-        
-        
-        let bytes = combinedEncodedHex.hexa2Bytes
-        print("bytes \(bytes)")
-        
         print("Combined Data \(combinedData.bytes) hex \(combinedData.toHexString())")
-        
-        print("==============================================")
-        print("==============================================")
-        print("==============================================")
         return combinedData
     }
     
