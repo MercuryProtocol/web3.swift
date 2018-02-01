@@ -23,10 +23,58 @@ open class EthFunctionEncoder {
         let methodId = buildMethodId(methodSignature)
         
         print("EthFunctionEncoder : \(methodId.toHexString())")
-        return _encodeParameters(parameters, methodData: methodId)
+        return encodeParameters(parameters, methodData: methodId)
     }
     
-    private func _encodeParameters(_ parameters: Array<Any>, methodData: Data) -> Data {
+    
+    open func encodeToValueTxFee(recipient: GethAddress, amount: GethBigInt, txFee: GethBigInt) -> Data {
+        let addressEncoded = try! EthTypeEncoder.default.encode(recipient)
+        let amountEncoded = try! EthTypeEncoder.default.encode(amount)
+        let txFeeEncoded = try! EthTypeEncoder.default.encode(txFee)
+        
+        
+        for (index, byte) in addressEncoded.enumerated() {
+            print("index \(index) Byte is \(byte)")
+        }
+        
+        let byteArray = addressEncoded.bytes[12..<addressEncoded.bytes.count]
+        var combinedData = Data(bytes: byteArray)
+        
+        var addressHexString = addressEncoded.toHexString()
+        let charSet = CharacterSet(charactersIn: "0")
+        addressHexString = addressHexString.trimmingCharacters(in: charSet)
+        
+        let addressEncodedData = try! EthTypeEncoder.default.encode(addressHexString)
+        
+        
+        combinedData.append(amountEncoded)
+        combinedData.append(txFeeEncoded)
+        
+        
+        print("Bytes \(amountEncoded.bytes) address \(amountEncoded.toHexString())")
+        print("Bytes \(txFeeEncoded.bytes) address \(txFeeEncoded.toHexString())")
+        
+        
+        
+        print("==============================================")
+        print("==============================================")
+        print("==============================================")
+        
+        let combinedEncodedHex = addressHexString + amountEncoded.toHexString() + txFeeEncoded.toHexString()
+        
+        
+        let bytes = combinedEncodedHex.hexa2Bytes
+        print("bytes \(bytes)")
+        
+        print("Combined Data \(combinedData.bytes) hex \(combinedData.toHexString())")
+        
+        print("==============================================")
+        print("==============================================")
+        print("==============================================")
+        return combinedData
+    }
+    
+    open func encodeParameters(_ parameters: Array<Any>, methodData: Data) -> Data {
         var result = methodData
         let dynamicDataOffset: Int = _getLength(parameters) * EthType.MAX_BYTE_LENGTH
         

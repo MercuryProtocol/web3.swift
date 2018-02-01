@@ -17,3 +17,12 @@ public func sign(address: GethAddress, encodedFunctionData: Data, nonce: Int64, 
     return EthAccountCoordinator.default.sign(address: address, encodedFunctionData: encodedFunctionData, nonce: nonce, gasLimit: gasLimit, gasPrice: gasPrice)
 }
 
+public func sign(message: Data, keystore: GethKeyStore, accountAddress: GethAddress) -> SignatureData? {
+    guard let defaultKeystore = EthAccountCoordinator.default.keystore, let defaultAccountAddress = EthAccountCoordinator.default.account?.getAddress() else {
+        print("Default Account not set, Please use Sign.sign instead")
+        return nil
+    }
+    return Sign.sign(message: message, keystore: defaultKeystore, accountAddress: defaultAccountAddress)
+}
+
+
