@@ -1,5 +1,6 @@
 [![CocoaPods Compatible](https://img.shields.io/badge/pod-1.4.1-blue.svg)](https://img.shields.io/badge/pod-1.4.1-blue.svg)
 [![Platform](https://img.shields.io/cocoapods/p/web3swift.svg?style=flat)](https://medium.com/@MercuryProtocol)
+[![Latest Tag](https://img.shields.io/badge/tag-0.0.8-green.svg?style=flat)](tags/0.0.8)
 [![Twitter](https://img.shields.io/badge/twitter-@mecruryprotocol-blue.svg?style=flat)](https://twitter.com/mercuryprotocol)
 
 web3.js utility library written in Swift.
