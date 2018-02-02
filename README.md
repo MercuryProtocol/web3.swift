@@ -1,5 +1,5 @@
 [![CocoaPods Compatible](https://img.shields.io/badge/pod-1.4.1-blue.svg)](https://img.shields.io/badge/pod-1.4.1-blue.svg)
-[![Platform](https://img.shields.io/cocoapods/p/web3swift.svg?style=flat)](https://web3swift.github.io/web3swift)
+[![Platform](https://img.shields.io/cocoapods/p/web3swift.svg?style=flat)](https://medium.com/@MercuryProtocol)
 [![Twitter](https://img.shields.io/badge/twitter-@mecruryprotocol-blue.svg?style=flat)](https://twitter.com/mercuryprotocol)
 
 web3.js utility library written in Swift.
@@ -26,13 +26,13 @@ Table of contents
 - [x] Import Account
 - [x] Create and Encode Transaction
 - [x] Sign Transaction
-- [x] [Complete Documentation](https://web3swift.github.io/web3swift)
+- [x] ~~Complete Documentation~~
 
 ## Component Libraries
 
 In order to keep web3swift focused specifically on core ethereum based utility functionality, additional component libraries will be created by the [Radical App LLC](https://github.com/web3swift/Foundation) to bring additional functionality to the mercury protocol ecosystem.
 
-- [iOS Example App](https://git.cyberdust.com/sameer/web3SwiftExample.git) - Example showcasing use of web3swift library.
+- ~~[iOS Example App](https://git.cyberdust.com/sameer/web3SwiftExample.git)~~ - Example showcasing use of web3swift library.
 - [Mercury Wallet - Wallet App to use with mercury protocol. (Coming Soon)
 
 ## Requirements
@@ -128,8 +128,8 @@ web3swift is owned and maintained by the [Radical App LLC](http://www.mercurypro
 
 ## Contributors
 
-* [Sameer Khavanekar](sameer@mercuryprotocol.com)
-* [Rohit Kotian](rohit@mercuryprotocol.com)
+* [Sameer Khavanekar](https://github.com/skhavanekar)
+* [Rohit Kotian](https://github.com/roviko)
 
 If you do want to participate please follow the [guideline](CONTRIBUTING.md).
 
