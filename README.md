@@ -33,7 +33,7 @@ Table of contents
 
 In order to keep web3swift focused specifically on core ethereum based utility functionality, additional component libraries will be created by the [Radical App LLC](https://github.com/web3swift/Foundation) to bring additional functionality to the mercury protocol ecosystem.
 
-- ~~[iOS Example App](https://git.cyberdust.com/sameer/web3SwiftExample.git)~~ - Example showcasing use of web3swift library.
+- [iOS Example App](https://github.com/MercuryProtocol/web3.swift-Example) - Example showcasing use of web3swift library.
 - [Mercury Wallet - Wallet App to use with mercury protocol. (Coming Soon)
 
 ## Requirements
