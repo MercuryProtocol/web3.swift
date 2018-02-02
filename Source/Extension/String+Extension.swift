@@ -85,7 +85,7 @@ public extension String {
                 return self
             }
         } catch {
-            print("Failed to create regex patter for given character")
+            print("Failed to create regex pattern for given character")
             return nil
         }
     }
