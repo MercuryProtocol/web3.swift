@@ -3,6 +3,7 @@ platform :ios, '9.0'
 def testing_pods
   pod 'Geth', '1.7.3'
   pod 'CryptoSwift'
+  pod 'BigInt', '~> 3.0'
 end
 
 
