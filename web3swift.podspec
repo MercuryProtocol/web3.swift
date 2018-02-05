@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "https://twitter.com/mercuryprotocol"
 
   s.platform     = :ios, "9.0"
-  s.source       = { :git => "https://git.cyberdust.com/sameer/web3swift.git", :tag => "#{s.version}", :submodules => true  }
+  s.source       = { :git => "https://github.com/MercuryProtocol/web3.swift.git", :tag => "#{s.version}", :submodules => true  }
 
   s.source_files = "Source/**/*.{h,swift}"
   # s.public_header_files = 'Sources/*.h'
