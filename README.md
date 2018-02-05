@@ -27,7 +27,7 @@ Table of contents
 - [x] Import Account
 - [x] Create and Encode Transaction
 - [x] Sign Transaction
-- [] ~~Complete Documentation~~
+- [ ] ~~Complete Documentation~~
 
 ## Component Libraries
 
