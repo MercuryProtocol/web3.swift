@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		421F0BC12011798700BE59AA /* web3swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421F0BB72011798600BE59AA /* web3swift.framework */; };
-		421F0BC62011798700BE59AA /* EtherSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421F0BC52011798700BE59AA /* EtherSTests.swift */; };
+		421F0BC62011798700BE59AA /* web3swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421F0BC52011798700BE59AA /* web3swiftTests.swift */; };
 		421F0BC82011798700BE59AA /* web3swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 421F0BBA2011798600BE59AA /* web3swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4226AD8E2022915800C542C3 /* SignatureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4226AD8D2022915800C542C3 /* SignatureData.swift */; };
 		4226AD902022935D00C542C3 /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4226AD8F2022935D00C542C3 /* Sign.swift */; };
@@ -26,6 +26,7 @@
 		42B0A8532011931800FE4872 /* web3swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B0A8522011931800FE4872 /* web3swift.swift */; };
 		8E986D6671B64E5ABDF7246F /* Pods_web3swiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8A0192F629A5DABC806F64 /* Pods_web3swiftTests.framework */; };
 		B82E4D7EB970A99222F8ED9F /* Pods_web3swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56EED7AF5E131285DFF2FD3 /* Pods_web3swift.framework */; };
+		CAB5C6AE2025249900E1A379 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = CAB5C6AD2025249900E1A379 /* CHANGELOG.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +46,7 @@
 		421F0BBA2011798600BE59AA /* web3swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = web3swift.h; sourceTree = "<group>"; };
 		421F0BBB2011798700BE59AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		421F0BC02011798700BE59AA /* web3swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = web3swiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		421F0BC52011798700BE59AA /* EtherSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherSTests.swift; sourceTree = "<group>"; };
+		421F0BC52011798700BE59AA /* web3swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = web3swiftTests.swift; sourceTree = "<group>"; };
 		421F0BC72011798700BE59AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4226AD87201AC7D500C542C3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4226AD8D2022915800C542C3 /* SignatureData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureData.swift; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 		42B0A84F2011865A00FE4872 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		42B0A8522011931800FE4872 /* web3swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = web3swift.swift; sourceTree = "<group>"; };
 		B56EED7AF5E131285DFF2FD3 /* Pods_web3swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_web3swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAB5C6AD2025249900E1A379 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		DD8A0192F629A5DABC806F64 /* Pods_web3swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_web3swiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2B068C99DC33C768476A47 /* Pods-web3swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-web3swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-web3swift/Pods-web3swift.debug.xcconfig"; sourceTree = "<group>"; };
 		FCCBD867E3A8461BD76E9BC2 /* Pods-web3swiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-web3swiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-web3swiftTests/Pods-web3swiftTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,10 +98,10 @@
 				421F0BD220117B4200BE59AA /* Deployment */,
 				42B0A851201186AD00FE4872 /* Documentation */,
 				42A82AD02016841C007290BD /* Frameworks */,
+				7FB02B7116E85A2EA66D026D /* Pods */,
 				421F0BB82011798600BE59AA /* Products */,
 				421F0BB92011798600BE59AA /* Source */,
 				421F0BC42011798700BE59AA /* Tests */,
-				7FB02B7116E85A2EA66D026D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,7 +130,7 @@
 		421F0BC42011798700BE59AA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				421F0BC52011798700BE59AA /* EtherSTests.swift */,
+				421F0BC52011798700BE59AA /* web3swiftTests.swift */,
 				421F0BC72011798700BE59AA /* Info.plist */,
 			);
 			path = Tests;
@@ -202,6 +204,7 @@
 		42B0A851201186AD00FE4872 /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
+				CAB5C6AD2025249900E1A379 /* CHANGELOG.md */,
 				4269083D201A9145009EFBB6 /* CONTRIBUTING.md */,
 				4226AD87201AC7D500C542C3 /* README.md */,
 			);
@@ -330,6 +333,7 @@
 				4269083E201A9145009EFBB6 /* CONTRIBUTING.md in Resources */,
 				42B0A8502011865A00FE4872 /* LICENSE in Resources */,
 				42B0A84B2011811000FE4872 /* web3swift.podspec in Resources */,
+				CAB5C6AE2025249900E1A379 /* CHANGELOG.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,7 +456,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				421F0BC62011798700BE59AA /* EtherSTests.swift in Sources */,
+				421F0BC62011798700BE59AA /* web3swiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
