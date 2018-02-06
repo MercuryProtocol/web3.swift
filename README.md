@@ -79,12 +79,12 @@ Then, run the following command:
 ```bash
 $ pod install
 ```
-Sidenote: In order to run project, you will have to turn off bitcode support as Geth doesn't support bitcode. Please check:
+Sidenote:
+- In order to run project, you will have to turn off bitcode support as Geth doesn't support bitcode. Please check:
 https://github.com/golang/go/issues/22395
+- iOS simulator compilation can be fixed by removing arm7 support from valid architectures in the app. You can find more information [here](https://github.com/golang/go/wiki/Mobile#ios-simulator).
 
 ## USAGE
-
-
 
 ### Create Account
 Create keystore and account with password.
