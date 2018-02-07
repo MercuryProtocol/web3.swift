@@ -42,9 +42,6 @@ open class EthFunctionEncoder {
         let byteArray = addressEncoded.bytes[startIndex..<addressEncoded.bytes.count]
         var combinedData = Data(bytes: byteArray)
         
-        var addressHexString: String? = addressEncoded.toHexString()
-        addressHexString = addressHexString?.trimmingFirstConsecutiveCharacters("0")
-        
         combinedData.append(amountEncoded)
         combinedData.append(txFeeEncoded)
         print("Combined Data \(combinedData.bytes) hex \(combinedData.toHexString())")

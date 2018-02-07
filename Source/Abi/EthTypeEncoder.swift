@@ -52,9 +52,12 @@ open class EthTypeEncoder {
     
     private func _encode(_ parameter: GethBigInt) -> Data {
         let valAmountData = parameter.getBytes()
-        let totalCount = EthType.MAX_BYTE_LENGTH - valAmountData!.count
+        let totalCount = EthType.MAX_BYTE_LENGTH - (valAmountData?.count ?? 0)
         var amountBytes = Data(count: totalCount)
-        amountBytes.append(valAmountData!)
+
+        if let valAmountData = valAmountData {
+            amountBytes.append(valAmountData)
+        }
         return amountBytes
     }
     
