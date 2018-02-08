@@ -13,9 +13,9 @@ Table of contents
 *  [Requirements](#requirements)
 *  [Communication](#communication)
 *  [Installation](#installation)
-    * **CocoaPods -** [CocoaPods](##cocoapods)
+    * [CocoaPods](#cocoapods), [Sidenote](#sidenote)
 *  [Usage](#usage)
-* **Intro -** [Create Account](#create-account), [Encoding](#encoding-transaction)
+    * **Intro -** [Create Account](#create-account), [Encoding](#encoding-transaction), [Signing Transaction](#signing-transaction)
 *  [Improvements](#improvements)
 *  [FAQ](#faq)
 *  [Credits](#credits)
@@ -80,7 +80,7 @@ Then, run the following command:
 ```bash
 $ pod install
 ```
-Sidenote:
+### Sidenote:
 - In order to run project, you will have to turn off bitcode support as Geth doesn't support bitcode. Please check:
 https://github.com/golang/go/issues/22395
 - iOS simulator compilation can be fixed by removing arm7 support from valid architectures in the app. You can find more information [here](https://github.com/golang/go/wiki/Mobile#ios-simulator).
