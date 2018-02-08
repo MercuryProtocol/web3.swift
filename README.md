@@ -70,7 +70,7 @@ platform :ios, '9.0'
 
 target '<Your Target Name>' do
     use_frameworks!
-    pod 'web3swift', '~> 0.0.8'
+    pod 'web3swift', :git => 'https://github.com/MercuryProtocol/web3.swift.git', :branch => 'master'
 end
 ```
 
@@ -90,19 +90,19 @@ https://github.com/golang/go/issues/22395
 Create keystore and account with password.
 ```bash
 let configuration = EthAccountConfiguration(namespace: "wallet", password: "qwerty")
-let (keystore, _) = EthAccountCoordinator.default.setup(configuration)
+let (keystore, _) = EthAccountCoordinator.default.launch(configuration)
 ```
 If you don't want to create account, this can be achieved by passing nil 
 ```bash
 let configuration = EthAccountConfiguration(namespace: "wallet", password: nil)
-let (keystore, _) = EthAccountCoordinator.default.setup(configuration)
+let (keystore, _) = EthAccountCoordinator.default.launch(configuration)
 ```
 
 ### Encoding Transaction
 ```bash
 var addressError: NSError? = nil
 let amountToTransfer = 5
-let gethToAccountAddress: GethAddress! = GethNewAddressFromHex("0x39db95b4f60bd75846c46df165d9e854b3cf1b56", &addressError)
+let gethToAccountAddress: GethAddress! = GethNewAddressFromHex("0x39db95b4f60bd75846c46df165d9e854b3cf2b56", &addressError)
 guard let amount = GethBigInt.bigInt(amountToTransfer) else {
     print("Invalid amount")
     return

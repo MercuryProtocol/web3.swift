@@ -51,7 +51,7 @@ open class EthAccountCoordinator {
     }
     
     
-    open func setup(_ configuration: EthAccountConfiguration) -> (GethKeyStore?, GethAccount?) {
+    open func launch(_ configuration: EthAccountConfiguration) -> (GethKeyStore?, GethAccount?) {
         defaultConfiguration = configuration
         _keystore = _createKeystore(configuration.namespace)
         
