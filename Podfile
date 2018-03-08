@@ -1,7 +1,7 @@
 platform :ios, '9.0'
 
 def testing_pods
-  pod 'Geth', '1.7.3'
+  pod 'Geth', '1.8.2'
   pod 'CryptoSwift'
 end
 

@@ -1,15 +1,15 @@
 PODS:
   - CryptoSwift (0.8.1)
-  - Geth (1.7.3)
+  - Geth (1.8.2)
 
 DEPENDENCIES:
   - CryptoSwift
-  - Geth (= 1.7.3)
+  - Geth (= 1.8.2)
 
 SPEC CHECKSUMS:
   CryptoSwift: 4b07d5b508c1eb67bfa314a727b705f8048a85de
-  Geth: 45a08eeef7a20e58dfc09a455563ffe210941a96
+  Geth: 683cf31f60d46479803484611505e2424230e0a0
 
-PODFILE CHECKSUM: 1a573af9b641d1c4b76451d2c58d0571b5a6f733
+PODFILE CHECKSUM: 32eff33f7588558eaf0e30c1c70bbdf2b3f1e224
 
 COCOAPODS: 1.4.0

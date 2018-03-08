@@ -40,7 +40,7 @@ open class Sign {
     open class func sign(keystore: GethKeyStore, account: GethAccount, address: GethAddress, encodedFunctionData: Data, nonce: Int64, gasLimit: GethBigInt, gasPrice: GethBigInt, password: String) -> GethTransaction? {
         do {
             let amount = GethNewBigInt(0)
-            if let newTransaction = GethNewTransaction(nonce, address, amount, gasLimit, gasPrice, encodedFunctionData) {
+            if let newTransaction = GethNewTransaction(nonce, address, amount, gasLimit.getInt64(), gasPrice, encodedFunctionData) {
                 // TODO:- Add timed Unlock
                 try keystore.unlock(account, passphrase: password)
                 let finalTransaction = try keystore.signTx(account, tx: newTransaction, chainID: nil)
