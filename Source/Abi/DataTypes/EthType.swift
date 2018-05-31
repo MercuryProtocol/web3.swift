@@ -13,19 +13,5 @@ public struct EthType {
     public static var MAX_BYTE_LENGTH: Int {
         return MAX_BIT_LENGTH / 8
     }
-    
-    public static func getTypeAsString(_ param: Any) -> String {
-        let typeOfParam = "\(type(of: param))"
-        
-        switch typeOfParam {
-        case "GethAddress":
-            return "address"
-        case "GethBigInt":
-            return "uint256"
-        default:
-            return typeOfParam.lowercased()
-        }
-    }
-    
 }
 

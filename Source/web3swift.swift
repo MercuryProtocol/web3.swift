@@ -10,7 +10,7 @@ import Foundation
 import Geth
 
 public func encode(_ function: EthFunction) -> Data {
-    return EthFunctionEncoder.default.encode(function)
+    return function.ethEncode()
 }
 
 public func sign(address: GethAddress, encodedFunctionData: Data, nonce: Int64, gasLimit: GethBigInt, gasPrice: GethBigInt) -> GethTransaction? {

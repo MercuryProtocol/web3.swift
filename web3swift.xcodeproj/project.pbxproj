@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AE8C83A20BFBF44006F120E /* String+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8C83820BFBDB7006F120E /* String+ExtensionTests.swift */; };
 		421F0BC12011798700BE59AA /* web3swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421F0BB72011798600BE59AA /* web3swift.framework */; };
 		421F0BC62011798700BE59AA /* web3swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421F0BC52011798700BE59AA /* web3swiftTests.swift */; };
 		421F0BC82011798700BE59AA /* web3swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 421F0BBA2011798600BE59AA /* web3swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		0659C86579CDEF23AE69D10B /* Pods-web3swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-web3swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-web3swift/Pods-web3swift.release.xcconfig"; sourceTree = "<group>"; };
 		35AD9756ED22F4713E40EA28 /* Pods-web3swiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-web3swiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-web3swiftTests/Pods-web3swiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3AE8C83820BFBDB7006F120E /* String+ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ExtensionTests.swift"; sourceTree = "<group>"; };
 		421F0BB72011798600BE59AA /* web3swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = web3swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		421F0BBA2011798600BE59AA /* web3swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = web3swift.h; sourceTree = "<group>"; };
 		421F0BBB2011798700BE59AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				421F0BC52011798700BE59AA /* web3swiftTests.swift */,
 				421F0BC72011798700BE59AA /* Info.plist */,
+				3AE8C83820BFBDB7006F120E /* String+ExtensionTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -254,7 +257,6 @@
 				421F0BB32011798600BE59AA /* Frameworks */,
 				421F0BB42011798600BE59AA /* Headers */,
 				421F0BB52011798600BE59AA /* Resources */,
-				A5AE38AF7C50FDA686772158 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,7 +276,6 @@
 				421F0BBD2011798700BE59AA /* Frameworks */,
 				421F0BBE2011798700BE59AA /* Resources */,
 				5360CB585F64660DE066ADC6 /* [CP] Embed Pods Frameworks */,
-				B636BE71ED8C1539B1BBA0CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -365,36 +366,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-web3swiftTests/Pods-web3swiftTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A5AE38AF7C50FDA686772158 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-web3swift/Pods-web3swift-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B636BE71ED8C1539B1BBA0CB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-web3swiftTests/Pods-web3swiftTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D3996A21066DC2D04531203D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -456,6 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE8C83A20BFBF44006F120E /* String+ExtensionTests.swift in Sources */,
 				421F0BC62011798700BE59AA /* web3swiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

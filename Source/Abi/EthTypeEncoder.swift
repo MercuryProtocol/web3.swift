@@ -9,31 +9,22 @@
 import Foundation
 import Geth
 
-open class EthTypeEncoder {
-    open static let `default`: EthTypeEncoder = {
-        return EthTypeEncoder()
-    }()
-    
-    open class func isDynamic(_ parameter: Any) -> Bool {
-        return parameter is String
+
+public protocol EthEncodable {
+    func ethEncode() -> Data
+    func typeString() -> String
+}
+
+extension EthEncodable {
+    public func typeString() -> String {
+        let typeOfParam = "\(type(of: self))"
+        return typeOfParam.lowercased()
     }
-    
-    open func encode(_ parameter: Any) throws -> Data {
-        if let result = parameter as? GethAddress {
-            return _encode(result)
-        }
-        if let result = parameter as? GethBigInt {
-            return _encode(result)
-        }
-        if let result = parameter as? String {
-            return _encode(result)
-        }
-        print("Type can not be encoded \(parameter)")
-        throw EthError.typeCanNotBeEncoded
-    }
-    
-    open func encode(_ parameter: Int) -> Data {
-        let uintCount = UInt8(exactly: parameter) ?? 0
+}
+
+extension Int : EthEncodable {
+    public func ethEncode() -> Data {
+        let uintCount = UInt8(exactly: self) ?? 0
         let paramData = Data(bytes: [uintCount])
         let padding = EthType.MAX_BYTE_LENGTH - paramData.count
         let paddingBytes = Data(count: padding)
@@ -43,53 +34,103 @@ open class EthTypeEncoder {
         target.append(contentsOf: paramData.bytes)
         return target
     }
-    
-    private func _encode(_ parameter: GethAddress) -> Data {
-        var addressBytes = Data(count: 12)//gmtSendAddress!.getBytes()
-        addressBytes.append(parameter.getBytes())
-        return addressBytes
-    }
-    
-    private func _encode(_ parameter: GethBigInt) -> Data {
-        let valAmountData = parameter.getBytes()
-        let totalCount = EthType.MAX_BYTE_LENGTH - (valAmountData?.count ?? 0)
-        var amountBytes = Data(count: totalCount)
+}
 
-        if let valAmountData = valAmountData {
-            amountBytes.append(valAmountData)
-        }
-        return amountBytes
-    }
-    
-    private func _encode(_ parameter: String) -> Data {
-        let utf8Data = parameter.data(using: .utf8)!
+extension String : EthEncodable {
+    public func ethEncode() -> Data {
+        let utf8Data = self.data(using: .utf8)!
         return _encodeDynamicBytes(utf8Data)
     }
     
     private func _encodeDynamicBytes(_ utf8Data: Data) -> Data {
         let count = utf8Data.count
         // Get Encoded Length
-        var encodedLengthData = encode(count)
-        let encodedBytesData = encodeBytes(data: utf8Data)
+        var encodedLengthData = count.ethEncode()
+        let encodedBytesData = utf8Data.ethEncode()
         encodedLengthData.append(contentsOf: encodedBytesData.bytes)
         return encodedLengthData
     }
-    
-    private func encodeBytes(data: Data) -> Data {
-        let length = data.count
+}
+
+extension Data : EthEncodable {
+    public func ethEncode() -> Data {
+        let length = self.count
         let mod = length % EthType.MAX_BYTE_LENGTH
         
         if mod != 0 {
             let padding = EthType.MAX_BYTE_LENGTH - mod
             let paddingBytes = Data(count: padding)
             var target = Data(capacity: padding + length)
-            target.append(contentsOf: data.bytes)
+            target.append(contentsOf: self.bytes)
             target.append(paddingBytes)
             return target
         } else {
-            return data
+            return self
         }
     }
+}
 
+extension GethBigInt : EthEncodable {
+    public func ethEncode() -> Data {
+        let valAmountData = self.getBytes()
+        let totalCount = EthType.MAX_BYTE_LENGTH - (valAmountData?.count ?? 0)
+        var amountBytes = Data(count: totalCount)
+        
+        if let valAmountData = valAmountData {
+            amountBytes.append(valAmountData)
+        }
+        return amountBytes
+    }
+    
+    public func typeString() -> String {
+        return "uint256"
+    }
+}
 
+extension GethAddress : EthEncodable {
+    public func ethEncode() -> Data {
+        var addressBytes = Data(count: 12)//gmtSendAddress!.getBytes()
+        addressBytes.append(self.getBytes())
+        return addressBytes
+    }
+    
+    public func typeString() -> String {
+        return "address"
+    }
+}
+
+extension Array where Element == EthEncodable {
+    public func ethEncode() -> Data {
+        var result = Data()
+        let dynamicDataOffset: Int = _getLength(self) * EthType.MAX_BYTE_LENGTH
+        
+        for parameter in self {
+            let encodedValue = parameter.ethEncode()
+            
+            if parameter is String {
+                let encodedDataOffset = dynamicDataOffset.ethEncode()
+                print("Encoded Offset \(encodedDataOffset.bytes)")
+                print("Encoded Offset hex \(encodedDataOffset.bytes.toHexString())")
+                result.append(encodedDataOffset)
+                let encodedParameter = parameter.ethEncode()
+                result.append(encodedParameter)
+            } else {
+                result.append(encodedValue)
+            }
+        }
+        
+        return result
+    }
+    
+    private func _getLength(_ parameters: Array<EthEncodable>) -> Int {
+        var count = 0
+        for parameter in parameters {
+            if let parameter = parameter as? Array<EthEncodable> {
+                count += parameter.count // TODO: - We need to look at this
+            } else {
+                count += 1
+            }
+        }
+        return count
+    }
 }
