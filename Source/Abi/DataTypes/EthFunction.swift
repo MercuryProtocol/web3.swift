@@ -10,10 +10,10 @@ import Foundation
 
 open class EthFunction {
     private var _name: String!
-    private var _inputParameters: Array<Any>!
-    private var _outputParameters: Array<Any>?
+    private var _inputParameters: Array<EthEncodable>!
+    private var _outputParameters: Array<EthEncodable>?
     
-    public init(name: String, inputParameters: Array<Any>, outputParameters: Array<Any>? = nil) {
+    public init(name: String, inputParameters: Array<EthEncodable>, outputParameters: Array<EthEncodable>? = nil) {
         _name = name
         _inputParameters = inputParameters
         _outputParameters = outputParameters
@@ -23,11 +23,11 @@ open class EthFunction {
         return _name
     }
     
-    public func getInputParameters() -> Array<Any> {
+    public func getInputParameters() -> Array<EthEncodable> {
         return _inputParameters
     }
     
-    public func getOutputParameters() -> Array<Any>? {
+    public func getOutputParameters() -> Array<EthEncodable>? {
         return _outputParameters
     }
     

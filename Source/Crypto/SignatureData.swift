@@ -9,18 +9,18 @@
 import Foundation
 import CryptoSwift
 
-open class SignatureData {
+public struct SignatureData {
     private var _v: Int
     private var _r: Data
     private var _s: Data
     
-    open var v: String {
+    public var v: String {
         return String(_v)
     }
-    open var r: String {
+    public var r: String {
         return _r.toHexString()
     }
-    open var s: String {
+    public var s: String {
         return _s.toHexString()
     }
     

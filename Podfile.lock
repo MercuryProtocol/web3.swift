@@ -6,10 +6,15 @@ DEPENDENCIES:
   - CryptoSwift
   - Geth (= 1.8.2)
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CryptoSwift
+    - Geth
+
 SPEC CHECKSUMS:
   CryptoSwift: 4b07d5b508c1eb67bfa314a727b705f8048a85de
   Geth: 683cf31f60d46479803484611505e2424230e0a0
 
 PODFILE CHECKSUM: 32eff33f7588558eaf0e30c1c70bbdf2b3f1e224
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0
